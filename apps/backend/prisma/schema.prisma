@@ -1,0 +1,126 @@
+// Prisma Schema for Meal Discovery Platform
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Dish {
+  id           String   @id @default(uuid())
+  name         String   @unique
+  description  String
+  imageUrl     String
+  category     String
+  difficulty   Int
+  prepTime     Int
+  cookTime     Int
+  servings     Int
+  tags         String[]
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  // Relations
+  ingredients  DishIngredient[]
+  instructions DishInstruction[]
+  nutrition    DishNutrition?
+  favorites    UserFavorite[]
+  history      DishHistory[]
+
+  @@index([category])
+  @@index([difficulty])
+  @@map("dishes")
+}
+
+model DishIngredient {
+  id       String  @id @default(uuid())
+  dishId   String
+  name     String
+  amount   String
+  unit     String?
+  optional Boolean @default(false)
+  order    Int
+
+  dish Dish @relation(fields: [dishId], references: [id], onDelete: Cascade)
+
+  @@index([dishId])
+  @@map("dish_ingredients")
+}
+
+model DishInstruction {
+  id      String @id @default(uuid())
+  dishId  String
+  step    String
+  order   Int
+
+  dish Dish @relation(fields: [dishId], references: [id], onDelete: Cascade)
+
+  @@index([dishId])
+  @@map("dish_instructions")
+}
+
+model DishNutrition {
+  id       String @id @default(uuid())
+  dishId   String @unique
+  calories Int
+  protein  Float
+  fat      Float
+  carbs    Float
+  fiber    Float?
+  sodium   Int?
+
+  dish Dish @relation(fields: [dishId], references: [id], onDelete: Cascade)
+
+  @@map("dish_nutrition")
+}
+
+model IngredientSubstitution {
+  id             String   @id @default(uuid())
+  ingredientName String   @unique
+  substitutes    String[]
+  category       String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([ingredientName])
+  @@map("ingredient_substitutions")
+}
+
+model UserFavorite {
+  id        String   @id @default(uuid())
+  userId    String
+  dishId    String
+  createdAt DateTime @default(now())
+
+  dish Dish @relation(fields: [dishId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, dishId])
+  @@index([userId])
+  @@map("user_favorites")
+}
+
+model DishHistory {
+  id        String   @id @default(uuid())
+  userId    String
+  dishId    String
+  viewedAt  DateTime @default(now())
+  cooked    Boolean  @default(false)
+
+  dish Dish @relation(fields: [dishId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([dishId])
+  @@map("dish_history")
+}
+
+model IngredientSynonym {
+  id        String   @id @default(uuid())
+  term      String   @unique
+  canonical String
+  createdAt DateTime @default(now())
+
+  @@index([canonical])
+  @@map("ingredient_synonyms")
+}
