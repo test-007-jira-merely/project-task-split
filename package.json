@@ -8,9 +8,15 @@
   "scripts": {
     "dev:backend": "npm run dev -w @meal-platform/backend",
     "dev:frontend": "npm run dev -w @meal-platform/frontend",
+    "build": "npm run build:shared && npm run build:backend && npm run build:frontend",
+    "build:shared": "npm run build -w @meal-platform/shared",
     "build:backend": "npm run build -w @meal-platform/backend",
     "build:frontend": "npm run build -w @meal-platform/frontend",
     "test": "npm run test --workspaces",
+    "test:backend": "npm run test -w @meal-platform/backend",
+    "test:frontend": "npm run test -w @meal-platform/frontend",
+    "test:cov": "npm run test:cov --workspaces",
+    "verify": "./scripts/verify.sh",
     "lint": "eslint . --ext .ts,.tsx"
   },
   "devDependencies": {
