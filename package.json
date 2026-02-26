@@ -1,0 +1,27 @@
+{
+  "name": "meal-discovery-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Enterprise-grade AI-ready meal discovery platform",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --parallel --filter \"./apps/**\" dev",
+    "build": "pnpm --filter \"./packages/**\" build && pnpm --filter \"./apps/**\" build",
+    "test": "pnpm --recursive test",
+    "lint": "pnpm --recursive lint",
+    "clean": "pnpm --recursive clean",
+    "typecheck": "pnpm --recursive typecheck"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  }
+}
