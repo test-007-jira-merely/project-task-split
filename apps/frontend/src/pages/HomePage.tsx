@@ -1,59 +1,70 @@
-import { useState } from 'react';
 import { HeroSection } from '@/components/hero/HeroSection';
-import { AnimatedContainer } from '@/components/ui/AnimatedContainer';
+import { DishCard } from '@/components/dish/DishCard';
+import { EmptyState } from '@/components/ui/EmptyState';
+import { motion } from 'framer-motion';
+import { ChefHat } from 'lucide-react';
+import { useRandomDish } from '@/hooks/useRandomDish';
+import { useDishStore } from '@/stores/useDishStore';
 
 export function HomePage() {
-  const [isLoading, setIsLoading] = useState(false);
+  const { mutate: generateDish, isPending } = useRandomDish();
+  const { currentDish, dishHistory, getRecentDishes } = useDishStore();
 
-  const handleGenerateMeal = () => {
-    setIsLoading(true);
-    // This will be connected to the API in the next subtask
-    setTimeout(() => {
-      setIsLoading(false);
-      // Navigate to dish details or show modal
-    }, 1000);
+  const handleGenerate = () => {
+    const excludeIds = dishHistory.slice(0, 5).map((d) => d.id);
+    generateDish(excludeIds);
   };
+
+  const recentDishes = getRecentDishes(8);
 
   return (
     <div className="space-y-12">
-      <HeroSection onGenerateMeal={handleGenerateMeal} isLoading={isLoading} />
+      <HeroSection onGenerateMeal={handleGenerate} isLoading={isPending} />
 
-      <AnimatedContainer delay={0.8}>
-        <div className="text-center space-y-4">
-          <h2 className="text-3xl font-semibold">How It Works</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            <div className="card">
-              <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-primary">1</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Generate Random Meals</h3>
-              <p className="text-muted">
-                Click the button to discover new recipes. Each click brings a unique dish to try.
-              </p>
-            </div>
-
-            <div className="card">
-              <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-primary">2</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Filter by Ingredients</h3>
-              <p className="text-muted">
-                Add ingredients you have and find dishes that match. Smart substitutions included.
-              </p>
-            </div>
-
-            <div className="card">
-              <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-primary">3</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Save Your Favorites</h3>
-              <p className="text-muted">
-                Heart the dishes you love and access them anytime from your favorites page.
-              </p>
-            </div>
+      {/* Current Dish */}
+      {currentDish && (
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="space-y-6"
+        >
+          <h2 className="text-3xl font-bold">Your Meal</h2>
+          <div className="max-w-2xl mx-auto">
+            <DishCard dish={currentDish} />
           </div>
-        </div>
-      </AnimatedContainer>
+        </motion.section>
+      )}
+
+      {/* Recent Dishes */}
+      {recentDishes.length > 0 && (
+        <section className="space-y-6">
+          <h2 className="text-3xl font-bold">Recently Generated</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {recentDishes.map((dish, index) => (
+              <motion.div
+                key={dish.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <DishCard dish={dish} />
+              </motion.div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {!currentDish && recentDishes.length === 0 && (
+        <EmptyState
+          icon={ChefHat}
+          title="Ready to discover?"
+          description="Click the button above to generate your first random meal idea!"
+          action={{
+            label: 'Generate Meal',
+            onClick: handleGenerate,
+          }}
+        />
+      )}
     </div>
   );
 }

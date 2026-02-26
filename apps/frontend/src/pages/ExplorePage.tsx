@@ -1,53 +1,83 @@
-import { useState } from 'react';
 import { IngredientEngine } from '@/components/ingredients/IngredientEngine';
+import { DishCard } from '@/components/dish/DishCard';
+import { MatchIndicator } from '@/components/matching/MatchIndicator';
 import { EmptyState } from '@/components/ui/EmptyState';
+import { motion } from 'framer-motion';
 import { Search } from 'lucide-react';
+import { useMatchingStore } from '@/stores/useMatchingStore';
+import { useMatchingDishes } from '@/hooks/useMatchingDishes';
 
 export function ExplorePage() {
-  const [ingredients, setIngredients] = useState<string[]>([]);
-  const [isSearching, setIsSearching] = useState(false);
+  const {
+    userIngredients,
+    matches,
+    addIngredient,
+    removeIngredient,
+    clearIngredients,
+  } = useMatchingStore();
 
-  const handleAddIngredient = (ingredient: string) => {
-    if (!ingredients.includes(ingredient)) {
-      setIngredients([...ingredients, ingredient]);
-    }
-  };
-
-  const handleRemoveIngredient = (ingredient: string) => {
-    setIngredients(ingredients.filter((i) => i !== ingredient));
-  };
+  const { mutate: searchDishes, isPending } = useMatchingDishes();
 
   const handleSearch = () => {
-    setIsSearching(true);
-    // This will be connected to the API in the next subtask
-    setTimeout(() => {
-      setIsSearching(false);
-    }, 1000);
+    searchDishes(userIngredients);
   };
 
   return (
-    <div className="space-y-8">
-      <div>
-        <h1 className="text-4xl font-bold mb-2">Explore Recipes</h1>
-        <p className="text-muted text-lg">
-          Find the perfect dish based on ingredients you have at home
+    <div className="space-y-12">
+      <div className="text-center space-y-4">
+        <h1 className="gradient-text">Explore by Ingredients</h1>
+        <p className="text-xl text-muted max-w-2xl mx-auto">
+          Tell us what you have, and we'll find perfect recipes with intelligent matching
         </p>
       </div>
 
       <IngredientEngine
-        ingredients={ingredients}
-        onAdd={handleAddIngredient}
-        onRemove={handleRemoveIngredient}
+        ingredients={userIngredients}
+        onAdd={addIngredient}
+        onRemove={removeIngredient}
         onSearch={handleSearch}
-        isSearching={isSearching}
+        isSearching={isPending}
       />
 
-      {/* Results will be displayed here after API integration */}
-      <EmptyState
-        icon={Search}
-        title="Start Adding Ingredients"
-        description="Add the ingredients you have available, and we'll find matching recipes for you"
-      />
+      {/* Match Results */}
+      {matches.length > 0 && (
+        <section className="space-y-6">
+          <div className="flex items-center justify-between">
+            <h2 className="text-3xl font-bold">
+              Found {matches.length} {matches.length === 1 ? 'Match' : 'Matches'}
+            </h2>
+            <button
+              onClick={clearIngredients}
+              className="text-muted hover:text-foreground transition-colors"
+            >
+              Clear all
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {matches.map((match, index) => (
+              <motion.div
+                key={match.dishId}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.05 }}
+                className="space-y-3"
+              >
+                <DishCard dish={match.dish} />
+                <MatchIndicator match={match} />
+              </motion.div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {userIngredients.length === 0 && (
+        <EmptyState
+          icon={Search}
+          title="Start Exploring"
+          description="Add ingredients you have on hand to discover delicious recipes"
+        />
+      )}
     </div>
   );
 }

@@ -1,33 +1,65 @@
 import { motion } from 'framer-motion';
-import { CheckCircle2, AlertCircle } from 'lucide-react';
+import { IngredientMatch } from '@meal-platform/shared';
+import { CheckCircle, XCircle, RefreshCw } from 'lucide-react';
 
 interface MatchIndicatorProps {
-  matchScore: number;
-  coverage: number;
+  match: IngredientMatch;
 }
 
-export function MatchIndicator({ matchScore, coverage }: MatchIndicatorProps) {
-  const getMatchLevel = (score: number) => {
-    if (score >= 80) return { label: 'Excellent Match', color: 'text-green-500', icon: CheckCircle2 };
-    if (score >= 60) return { label: 'Good Match', color: 'text-blue-500', icon: CheckCircle2 };
-    if (score >= 40) return { label: 'Fair Match', color: 'text-yellow-500', icon: AlertCircle };
-    return { label: 'Partial Match', color: 'text-orange-500', icon: AlertCircle };
-  };
-
-  const match = getMatchLevel(matchScore);
-  const Icon = match.icon;
-
+export function MatchIndicator({ match }: MatchIndicatorProps) {
   return (
-    <motion.div
-      className="flex items-center gap-2"
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-    >
-      <Icon className={`w-5 h-5 ${match.color}`} />
-      <div>
-        <p className={`text-sm font-semibold ${match.color}`}>{match.label}</p>
-        <p className="text-xs text-muted">{coverage}% ingredients covered</p>
+    <div className="card space-y-3">
+      {/* Match Score */}
+      <div className="flex items-center justify-between">
+        <span className="text-sm font-medium">Match Score</span>
+        <span className="text-lg font-bold text-primary">{match.matchScore.toFixed(0)}%</span>
       </div>
-    </motion.div>
+
+      {/* Progress Bar */}
+      <div className="w-full h-2 bg-muted/20 rounded-full overflow-hidden">
+        <motion.div
+          className="h-full bg-gradient-to-r from-primary to-accent"
+          initial={{ width: 0 }}
+          animate={{ width: `${match.matchScore}%` }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+        />
+      </div>
+
+      {/* Coverage */}
+      <div className="text-sm text-muted">
+        {match.coveragePercentage.toFixed(0)}% ingredient coverage
+      </div>
+
+      {/* Matched/Missing */}
+      <div className="grid grid-cols-2 gap-2 text-xs">
+        <div className="flex items-start gap-1">
+          <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+          <div>
+            <div className="font-medium">Matched ({match.matchedIngredients.length})</div>
+            <div className="text-muted">{match.matchedIngredients.slice(0, 3).join(', ')}</div>
+          </div>
+        </div>
+        <div className="flex items-start gap-1">
+          <XCircle className="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" />
+          <div>
+            <div className="font-medium">Missing ({match.missingIngredients.length})</div>
+            <div className="text-muted">{match.missingIngredients.slice(0, 3).join(', ')}</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Substitutions */}
+      {match.substitutedIngredients.length > 0 && (
+        <div className="flex items-start gap-1 text-xs">
+          <RefreshCw className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+          <div>
+            <div className="font-medium">Substitutions ({match.substitutedIngredients.length})</div>
+            <div className="text-muted">
+              {match.substitutedIngredients.map(s => `${s.original}→${s.substitute}`).join(', ')}
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
