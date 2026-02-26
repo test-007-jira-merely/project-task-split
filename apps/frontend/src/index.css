@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme colors */
+    --color-background: 255 255 255;
+    --color-foreground: 15 23 42;
+    --color-primary: 99 102 241;
+    --color-secondary: 139 92 246;
+    --color-accent: 236 72 153;
+    --color-muted: 148 163 184;
+    --color-border: 226 232 240;
+    --color-card-bg: 248 250 252;
+    --color-card-hover: 241 245 249;
+
+    /* Spacing */
+    --spacing-page: 2rem;
+    --spacing-section: 4rem;
+
+    /* Border radius */
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  .dark {
+    /* Dark theme colors */
+    --color-background: 15 23 42;
+    --color-foreground: 248 250 252;
+    --color-primary: 129 140 248;
+    --color-secondary: 167 139 250;
+    --color-accent: 244 114 182;
+    --color-muted: 100 116 139;
+    --color-border: 51 65 85;
+    --color-card-bg: 30 41 59;
+    --color-card-hover: 51 65 85;
+
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl font-bold tracking-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-semibold tracking-tight;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold;
+  }
+
+  p {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-white hover:opacity-90 focus:ring-primary;
+  }
+
+  .btn-secondary {
+    @apply btn bg-secondary text-white hover:opacity-90 focus:ring-secondary;
+  }
+
+  .card {
+    @apply bg-card-bg rounded-xl p-6 shadow-md border border-border
+           transition-all duration-200 hover:shadow-lg hover:bg-card-hover;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary via-secondary to-accent
+           bg-clip-text text-transparent;
+  }
+}
