@@ -1,0 +1,93 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Dish {
+  id          String   @id @default(uuid())
+  name        String
+  description String
+  imageUrl    String
+  category    String
+  difficulty  Int
+  prepTime    Int
+  cookTime    Int
+  nutrition   Json
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  ingredients  Ingredient[]
+  instructions Instruction[]
+  favorites    Favorite[]
+  history      UserHistory[]
+
+  @@index([category])
+  @@index([difficulty])
+}
+
+model Ingredient {
+  id       String  @id @default(uuid())
+  dishId   String
+  name     String
+  amount   String
+  unit     String
+  category String?
+
+  dish Dish @relation(fields: [dishId], references: [id], onDelete: Cascade)
+
+  @@index([dishId])
+  @@index([name])
+}
+
+model Instruction {
+  id     String @id @default(uuid())
+  dishId String
+  step   Int
+  text   String
+
+  dish Dish @relation(fields: [dishId], references: [id], onDelete: Cascade)
+
+  @@index([dishId])
+}
+
+model Substitution {
+  id                 String   @id @default(uuid())
+  primaryIngredient  String   @unique
+  substitutes        String[]
+  substitutionScore  Float
+  createdAt          DateTime @default(now())
+
+  @@index([primaryIngredient])
+}
+
+model Favorite {
+  id        String   @id @default(uuid())
+  userId    String
+  dishId    String
+  createdAt DateTime @default(now())
+
+  dish Dish @relation(fields: [dishId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, dishId])
+  @@index([userId])
+  @@index([dishId])
+}
+
+model UserHistory {
+  id       String   @id @default(uuid())
+  userId   String
+  dishId   String
+  action   String
+  rating   Int?
+  viewedAt DateTime @default(now())
+
+  dish Dish @relation(fields: [dishId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([dishId])
+  @@index([viewedAt])
+}
