@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+*.lcov
+.nyc_output
+
+# Production
+dist/
+build/
+.next/
+out/
+
+# Environment
+.env
+.env*.local
+.env.production
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary
+*.tmp
+.cache/
+.parcel-cache/
+.temp/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+prisma/migrations/
+!prisma/migrations/.gitkeep
+
+# Build artifacts
+*.tsbuildinfo
+.turbo/
