@@ -1,0 +1,16 @@
+export const normalizeString = (str: string): string => {
+  return str.toLowerCase().trim().replace(/\s+/g, ' ');
+};
+
+export const removeDuplicates = <T>(arr: T[]): T[] => {
+  return Array.from(new Set(arr));
+};
+
+export const shuffleArray = <T>(arr: T[]): T[] => {
+  const newArr = [...arr];
+  for (let i = newArr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+  }
+  return newArr;
+};
