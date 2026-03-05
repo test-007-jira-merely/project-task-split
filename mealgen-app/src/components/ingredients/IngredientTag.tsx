@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { motion } from 'framer-motion';
 import { X } from 'lucide-react';
 
@@ -6,7 +7,7 @@ interface IngredientTagProps {
   onRemove: () => void;
 }
 
-export default function IngredientTag({ ingredient, onRemove }: IngredientTagProps) {
+const IngredientTag = memo(function IngredientTag({ ingredient, onRemove }: IngredientTagProps) {
   return (
     <motion.div
       initial={{ scale: 0, opacity: 0 }}
@@ -24,4 +25,6 @@ export default function IngredientTag({ ingredient, onRemove }: IngredientTagPro
       </button>
     </motion.div>
   );
-}
+});
+
+export default IngredientTag;

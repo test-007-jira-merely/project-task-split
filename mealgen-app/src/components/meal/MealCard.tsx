@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { motion } from 'framer-motion';
 import { Heart } from 'lucide-react';
 import Card from '../ui/Card';
@@ -12,7 +13,7 @@ interface MealCardProps {
   showMatch?: boolean;
 }
 
-export default function MealCard({
+const MealCard = memo(function MealCard({
   meal,
   onClick,
   onFavoriteToggle,
@@ -27,6 +28,9 @@ export default function MealCard({
           alt={meal.name}
           className="w-full h-48 object-cover"
           loading="lazy"
+          onError={(e) => {
+            e.currentTarget.src = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500';
+          }}
         />
         {showMatch && meal.matchPercentage !== undefined && (
           <div className="absolute top-3 left-3">
@@ -79,4 +83,6 @@ export default function MealCard({
       </div>
     </Card>
   );
-}
+});
+
+export default MealCard;

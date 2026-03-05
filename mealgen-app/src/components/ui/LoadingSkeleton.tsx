@@ -1,5 +1,5 @@
 interface LoadingSkeletonProps {
-  variant?: 'text' | 'card' | 'image' | 'circular';
+  variant?: 'text' | 'card' | 'image' | 'circular' | 'table';
   width?: string;
   height?: string;
   className?: string;
@@ -18,6 +18,7 @@ export default function LoadingSkeleton({
     card: 'h-64 rounded-xl',
     image: 'h-48 rounded-lg',
     circular: 'rounded-full',
+    table: 'h-16 rounded-lg',
   };
 
   const style = {
