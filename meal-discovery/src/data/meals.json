@@ -1,0 +1,1748 @@
+[
+  {
+    "id": "meal-001",
+    "name": "Classic Pancakes",
+    "imageUrl": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800",
+    "description": "Fluffy homemade pancakes perfect for breakfast",
+    "ingredients": ["flour", "eggs", "milk", "sugar", "baking powder", "butter", "vanilla extract"],
+    "instructions": [
+      "Mix dry ingredients in a large bowl",
+      "Whisk eggs, milk, and vanilla in another bowl",
+      "Combine wet and dry ingredients",
+      "Heat a griddle over medium heat",
+      "Pour batter and cook until bubbles form",
+      "Flip and cook until golden brown"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-002",
+    "name": "French Toast",
+    "imageUrl": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800",
+    "description": "Cinnamon-spiced French toast with crispy edges",
+    "ingredients": ["bread", "eggs", "milk", "cinnamon", "vanilla extract", "butter", "maple syrup"],
+    "instructions": [
+      "Beat eggs, milk, cinnamon, and vanilla",
+      "Dip bread slices in egg mixture",
+      "Heat butter in a pan",
+      "Cook bread until golden on both sides",
+      "Serve with maple syrup"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 15
+  },
+  {
+    "id": "meal-003",
+    "name": "Scrambled Eggs with Toast",
+    "imageUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800",
+    "description": "Creamy scrambled eggs with buttered toast",
+    "ingredients": ["eggs", "butter", "milk", "salt", "pepper", "bread"],
+    "instructions": [
+      "Beat eggs with milk, salt, and pepper",
+      "Melt butter in a pan over low heat",
+      "Pour in eggs and gently scramble",
+      "Toast bread and butter it",
+      "Serve eggs alongside toast"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 10
+  },
+  {
+    "id": "meal-004",
+    "name": "Avocado Toast",
+    "imageUrl": "https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?w=800",
+    "description": "Creamy avocado on toasted sourdough with toppings",
+    "ingredients": ["avocado", "bread", "lemon juice", "salt", "pepper", "chili flakes", "olive oil"],
+    "instructions": [
+      "Toast bread until golden",
+      "Mash avocado with lemon juice, salt, and pepper",
+      "Spread avocado on toast",
+      "Drizzle with olive oil",
+      "Top with chili flakes"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 8
+  },
+  {
+    "id": "meal-005",
+    "name": "Greek Yogurt Parfait",
+    "imageUrl": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800",
+    "description": "Layered yogurt with granola and fresh berries",
+    "ingredients": ["greek yogurt", "granola", "strawberries", "blueberries", "honey", "almonds"],
+    "instructions": [
+      "Layer yogurt in a glass",
+      "Add a layer of granola",
+      "Top with fresh berries",
+      "Drizzle with honey",
+      "Sprinkle with almonds"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 5
+  },
+  {
+    "id": "meal-006",
+    "name": "Breakfast Burrito",
+    "imageUrl": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=800",
+    "description": "Hearty burrito filled with eggs, beans, and cheese",
+    "ingredients": ["tortilla", "eggs", "black beans", "cheese", "salsa", "avocado", "sour cream"],
+    "instructions": [
+      "Scramble eggs in a pan",
+      "Warm tortilla",
+      "Layer eggs, beans, and cheese on tortilla",
+      "Add salsa and avocado",
+      "Roll tightly and serve with sour cream"
+    ],
+    "category": "breakfast",
+    "difficulty": "medium",
+    "prepTime": 15
+  },
+  {
+    "id": "meal-007",
+    "name": "Oatmeal with Berries",
+    "imageUrl": "https://images.unsplash.com/photo-1517673132405-a56a62b18caf?w=800",
+    "description": "Warm oatmeal topped with fresh berries and nuts",
+    "ingredients": ["oats", "milk", "strawberries", "blueberries", "honey", "walnuts", "cinnamon"],
+    "instructions": [
+      "Cook oats in milk until creamy",
+      "Stir in cinnamon",
+      "Top with fresh berries",
+      "Drizzle with honey",
+      "Sprinkle with walnuts"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 10
+  },
+  {
+    "id": "meal-008",
+    "name": "Belgian Waffles",
+    "imageUrl": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=800",
+    "description": "Crispy Belgian waffles with whipped cream",
+    "ingredients": ["flour", "eggs", "milk", "sugar", "baking powder", "butter", "vanilla extract", "whipped cream"],
+    "instructions": [
+      "Mix dry ingredients",
+      "Whisk wet ingredients separately",
+      "Combine and let rest for 5 minutes",
+      "Pour batter into preheated waffle iron",
+      "Cook until golden and crispy",
+      "Top with whipped cream and berries"
+    ],
+    "category": "breakfast",
+    "difficulty": "medium",
+    "prepTime": 25
+  },
+  {
+    "id": "meal-009",
+    "name": "Breakfast Sandwich",
+    "imageUrl": "https://images.unsplash.com/photo-1619894991882-58f9df99195b?w=800",
+    "description": "Egg, cheese, and bacon on an English muffin",
+    "ingredients": ["english muffin", "eggs", "bacon", "cheese", "butter", "salt", "pepper"],
+    "instructions": [
+      "Cook bacon until crispy",
+      "Fry egg to desired doneness",
+      "Toast English muffin",
+      "Layer egg, bacon, and cheese on muffin",
+      "Season with salt and pepper"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 12
+  },
+  {
+    "id": "meal-010",
+    "name": "Blueberry Muffins",
+    "imageUrl": "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=800",
+    "description": "Moist blueberry muffins with crumb topping",
+    "ingredients": ["flour", "sugar", "blueberries", "eggs", "milk", "butter", "baking powder", "vanilla extract"],
+    "instructions": [
+      "Preheat oven to 375°F",
+      "Mix dry ingredients",
+      "Whisk wet ingredients",
+      "Fold in blueberries gently",
+      "Fill muffin cups and bake for 20 minutes"
+    ],
+    "category": "breakfast",
+    "difficulty": "medium",
+    "prepTime": 35
+  },
+  {
+    "id": "meal-011",
+    "name": "Smoothie Bowl",
+    "imageUrl": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=800",
+    "description": "Thick fruit smoothie topped with granola and fruits",
+    "ingredients": ["banana", "strawberries", "blueberries", "greek yogurt", "granola", "honey", "chia seeds"],
+    "instructions": [
+      "Blend frozen fruits with yogurt until thick",
+      "Pour into a bowl",
+      "Top with granola",
+      "Arrange fresh fruits on top",
+      "Drizzle with honey and sprinkle chia seeds"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 8
+  },
+  {
+    "id": "meal-012",
+    "name": "Eggs Benedict",
+    "imageUrl": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=800",
+    "description": "Poached eggs with hollandaise on English muffins",
+    "ingredients": ["english muffin", "eggs", "ham", "butter", "lemon juice", "egg yolks", "salt", "cayenne pepper"],
+    "instructions": [
+      "Make hollandaise sauce with egg yolks and butter",
+      "Poach eggs in simmering water",
+      "Toast English muffins",
+      "Warm ham slices",
+      "Assemble and top with hollandaise"
+    ],
+    "category": "breakfast",
+    "difficulty": "hard",
+    "prepTime": 30
+  },
+  {
+    "id": "meal-013",
+    "name": "Bagel with Cream Cheese",
+    "imageUrl": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800",
+    "description": "Toasted bagel with cream cheese and smoked salmon",
+    "ingredients": ["bagel", "cream cheese", "smoked salmon", "capers", "red onion", "dill"],
+    "instructions": [
+      "Slice and toast bagel",
+      "Spread cream cheese generously",
+      "Layer smoked salmon",
+      "Top with capers and red onion",
+      "Garnish with fresh dill"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 7
+  },
+  {
+    "id": "meal-014",
+    "name": "Banana Bread",
+    "imageUrl": "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=800",
+    "description": "Moist homemade banana bread",
+    "ingredients": ["bananas", "flour", "sugar", "eggs", "butter", "baking soda", "vanilla extract", "walnuts"],
+    "instructions": [
+      "Preheat oven to 350°F",
+      "Mash ripe bananas",
+      "Mix with wet ingredients",
+      "Fold in dry ingredients and walnuts",
+      "Bake for 60 minutes"
+    ],
+    "category": "breakfast",
+    "difficulty": "medium",
+    "prepTime": 75
+  },
+  {
+    "id": "meal-015",
+    "name": "Shakshuka",
+    "imageUrl": "https://images.unsplash.com/photo-1595587637401-f8f5e0f3e2e6?w=800",
+    "description": "Eggs poached in spicy tomato sauce",
+    "ingredients": ["eggs", "tomatoes", "bell peppers", "onion", "garlic", "cumin", "paprika", "olive oil"],
+    "instructions": [
+      "Sauté onions, peppers, and garlic",
+      "Add tomatoes and spices",
+      "Simmer until sauce thickens",
+      "Create wells and crack eggs into sauce",
+      "Cover and cook until eggs are set"
+    ],
+    "category": "breakfast",
+    "difficulty": "medium",
+    "prepTime": 30
+  },
+  {
+    "id": "meal-016",
+    "name": "Croissant Breakfast",
+    "imageUrl": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800",
+    "description": "Buttery croissant with jam and coffee",
+    "ingredients": ["croissant", "butter", "strawberry jam", "coffee"],
+    "instructions": [
+      "Warm croissant in oven",
+      "Slice open",
+      "Spread with butter and jam",
+      "Serve with hot coffee"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 5
+  },
+  {
+    "id": "meal-017",
+    "name": "Acai Bowl",
+    "imageUrl": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=800",
+    "description": "Brazilian superfood bowl with tropical toppings",
+    "ingredients": ["acai puree", "banana", "strawberries", "granola", "coconut", "honey", "blueberries"],
+    "instructions": [
+      "Blend acai with banana until thick",
+      "Pour into bowl",
+      "Top with granola and fresh fruits",
+      "Sprinkle with coconut",
+      "Drizzle with honey"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 10
+  },
+  {
+    "id": "meal-018",
+    "name": "Breakfast Quesadilla",
+    "imageUrl": "https://images.unsplash.com/photo-1618040996337-56904b7850b9?w=800",
+    "description": "Cheesy quesadilla with scrambled eggs and peppers",
+    "ingredients": ["tortilla", "eggs", "cheese", "bell peppers", "onion", "salsa", "sour cream"],
+    "instructions": [
+      "Scramble eggs with peppers and onions",
+      "Place eggs and cheese on tortilla",
+      "Fold and cook until golden",
+      "Flip and cook other side",
+      "Serve with salsa and sour cream"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 15
+  },
+  {
+    "id": "meal-019",
+    "name": "Huevos Rancheros",
+    "imageUrl": "https://images.unsplash.com/photo-1607093793019-1e47be6f5fc3?w=800",
+    "description": "Mexican breakfast with fried eggs and salsa",
+    "ingredients": ["tortilla", "eggs", "black beans", "salsa", "avocado", "cheese", "cilantro", "lime"],
+    "instructions": [
+      "Warm tortillas and spread with beans",
+      "Fry eggs sunny-side up",
+      "Place eggs on tortillas",
+      "Top with salsa, avocado, and cheese",
+      "Garnish with cilantro and lime"
+    ],
+    "category": "breakfast",
+    "difficulty": "medium",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-020",
+    "name": "Chia Pudding",
+    "imageUrl": "https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?w=800",
+    "description": "Overnight chia pudding with fruit and nuts",
+    "ingredients": ["chia seeds", "almond milk", "honey", "vanilla extract", "mango", "coconut", "almonds"],
+    "instructions": [
+      "Mix chia seeds with almond milk and honey",
+      "Refrigerate overnight",
+      "Top with fresh mango",
+      "Sprinkle with coconut and almonds",
+      "Serve chilled"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 10
+  },
+  {
+    "id": "meal-021",
+    "name": "Breakfast Hash",
+    "imageUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800",
+    "description": "Crispy potato hash with peppers and onions",
+    "ingredients": ["potatoes", "bell peppers", "onion", "eggs", "paprika", "garlic powder", "olive oil", "salt"],
+    "instructions": [
+      "Dice potatoes, peppers, and onions",
+      "Pan-fry until crispy and golden",
+      "Season with spices",
+      "Create wells and add eggs",
+      "Cook until eggs are done"
+    ],
+    "category": "breakfast",
+    "difficulty": "medium",
+    "prepTime": 30
+  },
+  {
+    "id": "meal-022",
+    "name": "Protein Pancakes",
+    "imageUrl": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800",
+    "description": "High-protein pancakes with banana",
+    "ingredients": ["oats", "banana", "eggs", "protein powder", "baking powder", "cinnamon", "maple syrup"],
+    "instructions": [
+      "Blend all ingredients until smooth",
+      "Heat griddle over medium heat",
+      "Pour batter and cook until bubbles form",
+      "Flip and cook other side",
+      "Serve with maple syrup"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 15
+  },
+  {
+    "id": "meal-023",
+    "name": "Breakfast Tacos",
+    "imageUrl": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800",
+    "description": "Soft tacos filled with scrambled eggs and toppings",
+    "ingredients": ["tortilla", "eggs", "chorizo", "cheese", "salsa", "cilantro", "lime"],
+    "instructions": [
+      "Cook chorizo until browned",
+      "Scramble eggs with chorizo",
+      "Warm tortillas",
+      "Fill with egg mixture",
+      "Top with salsa, cheese, and cilantro"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 15
+  },
+  {
+    "id": "meal-024",
+    "name": "Quiche Lorraine",
+    "imageUrl": "https://images.unsplash.com/photo-1619894991882-58f9df99195b?w=800",
+    "description": "Classic French quiche with bacon and cheese",
+    "ingredients": ["pie crust", "eggs", "cream", "bacon", "cheese", "onion", "nutmeg", "salt", "pepper"],
+    "instructions": [
+      "Preheat oven to 375°F",
+      "Cook bacon and onions",
+      "Whisk eggs with cream and seasonings",
+      "Place bacon in pie crust",
+      "Pour egg mixture and bake for 35 minutes"
+    ],
+    "category": "breakfast",
+    "difficulty": "medium",
+    "prepTime": 50
+  },
+  {
+    "id": "meal-025",
+    "name": "Overnight Oats",
+    "imageUrl": "https://images.unsplash.com/photo-1517673132405-a56a62b18caf?w=800",
+    "description": "No-cook oats with berries and nuts",
+    "ingredients": ["oats", "milk", "greek yogurt", "honey", "blueberries", "strawberries", "almonds", "chia seeds"],
+    "instructions": [
+      "Mix oats, milk, and yogurt in a jar",
+      "Add honey and chia seeds",
+      "Refrigerate overnight",
+      "Top with fresh berries",
+      "Sprinkle with almonds before serving"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 5
+  },
+  {
+    "id": "meal-026",
+    "name": "Caesar Salad",
+    "imageUrl": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=800",
+    "description": "Classic Caesar salad with grilled chicken",
+    "ingredients": ["romaine lettuce", "chicken breast", "parmesan cheese", "croutons", "caesar dressing", "lemon"],
+    "instructions": [
+      "Grill and slice chicken breast",
+      "Chop romaine lettuce",
+      "Toss with Caesar dressing",
+      "Top with chicken, croutons, and parmesan",
+      "Add fresh lemon juice"
+    ],
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-027",
+    "name": "Grilled Cheese Sandwich",
+    "imageUrl": "https://images.unsplash.com/photo-1528736235302-52922df5c122?w=800",
+    "description": "Perfectly crispy grilled cheese sandwich",
+    "ingredients": ["bread", "cheddar cheese", "mozzarella cheese", "butter"],
+    "instructions": [
+      "Butter outside of bread slices",
+      "Layer cheeses between bread",
+      "Grill in pan over medium heat",
+      "Flip when golden brown",
+      "Cook until cheese is melted"
+    ],
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 10
+  },
+  {
+    "id": "meal-028",
+    "name": "BLT Sandwich",
+    "imageUrl": "https://images.unsplash.com/photo-1619894991882-58f9df99195b?w=800",
+    "description": "Bacon, lettuce, and tomato on toasted bread",
+    "ingredients": ["bread", "bacon", "lettuce", "tomato", "mayonnaise", "salt", "pepper"],
+    "instructions": [
+      "Cook bacon until crispy",
+      "Toast bread",
+      "Spread mayonnaise on bread",
+      "Layer bacon, lettuce, and tomato",
+      "Season with salt and pepper"
+    ],
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 15
+  },
+  {
+    "id": "meal-029",
+    "name": "Club Sandwich",
+    "imageUrl": "https://images.unsplash.com/photo-1619894991882-58f9df99195b?w=800",
+    "description": "Triple-decker sandwich with turkey, bacon, and veggies",
+    "ingredients": ["bread", "turkey", "bacon", "lettuce", "tomato", "cheese", "mayonnaise", "mustard"],
+    "instructions": [
+      "Toast three slices of bread",
+      "Layer turkey, bacon, and cheese",
+      "Add lettuce and tomato",
+      "Spread mayo and mustard",
+      "Stack layers and cut diagonally"
+    ],
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 15
+  },
+  {
+    "id": "meal-030",
+    "name": "Chicken Wrap",
+    "imageUrl": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=800",
+    "description": "Grilled chicken wrap with fresh vegetables",
+    "ingredients": ["tortilla", "chicken breast", "lettuce", "tomato", "cucumber", "ranch dressing", "cheese"],
+    "instructions": [
+      "Grill and slice chicken",
+      "Warm tortilla",
+      "Layer chicken and vegetables",
+      "Add cheese and dressing",
+      "Roll tightly and slice in half"
+    ],
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 15
+  },
+  {
+    "id": "meal-031",
+    "name": "Caprese Sandwich",
+    "imageUrl": "https://images.unsplash.com/photo-1592417817038-d13a4ce00a42?w=800",
+    "description": "Italian sandwich with mozzarella, tomato, and basil",
+    "ingredients": ["ciabatta bread", "mozzarella cheese", "tomato", "basil", "balsamic vinegar", "olive oil", "salt"],
+    "instructions": [
+      "Slice bread and lightly toast",
+      "Layer fresh mozzarella and tomato slices",
+      "Add fresh basil leaves",
+      "Drizzle with balsamic and olive oil",
+      "Season with salt"
+    ],
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 10
+  },
+  {
+    "id": "meal-032",
+    "name": "Tuna Salad Sandwich",
+    "imageUrl": "https://images.unsplash.com/photo-1546554137-f86b9593a222?w=800",
+    "description": "Classic tuna salad on whole wheat bread",
+    "ingredients": ["tuna", "mayonnaise", "celery", "onion", "bread", "lettuce", "tomato", "lemon juice"],
+    "instructions": [
+      "Mix tuna with mayo, celery, and onion",
+      "Add lemon juice and mix well",
+      "Spread on bread",
+      "Top with lettuce and tomato",
+      "Serve immediately"
+    ],
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 10
+  },
+  {
+    "id": "meal-033",
+    "name": "Chicken Quesadilla",
+    "imageUrl": "https://images.unsplash.com/photo-1618040996337-56904b7850b9?w=800",
+    "description": "Cheesy chicken quesadilla with peppers",
+    "ingredients": ["tortilla", "chicken breast", "cheese", "bell peppers", "onion", "sour cream", "salsa"],
+    "instructions": [
+      "Cook chicken with peppers and onions",
+      "Place on tortilla with cheese",
+      "Fold and cook until golden",
+      "Flip and cook other side",
+      "Serve with sour cream and salsa"
+    ],
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-034",
+    "name": "Greek Salad",
+    "imageUrl": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800",
+    "description": "Fresh Greek salad with feta and olives",
+    "ingredients": ["cucumber", "tomato", "red onion", "feta cheese", "olives", "olive oil", "lemon juice", "oregano"],
+    "instructions": [
+      "Chop cucumber, tomato, and onion",
+      "Add feta and olives",
+      "Drizzle with olive oil and lemon juice",
+      "Sprinkle with oregano",
+      "Toss gently and serve"
+    ],
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 10
+  },
+  {
+    "id": "meal-035",
+    "name": "Chicken Salad",
+    "imageUrl": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=800",
+    "description": "Grilled chicken over mixed greens",
+    "ingredients": ["chicken breast", "mixed greens", "cherry tomatoes", "cucumber", "avocado", "vinaigrette", "sunflower seeds"],
+    "instructions": [
+      "Grill and slice chicken",
+      "Arrange greens on plate",
+      "Add tomatoes, cucumber, and avocado",
+      "Top with sliced chicken",
+      "Drizzle with vinaigrette and sprinkle seeds"
+    ],
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-036",
+    "name": "Tomato Soup",
+    "imageUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800",
+    "description": "Creamy tomato soup with basil",
+    "ingredients": ["tomatoes", "onion", "garlic", "vegetable broth", "cream", "basil", "olive oil", "salt", "pepper"],
+    "instructions": [
+      "Sauté onion and garlic",
+      "Add tomatoes and broth",
+      "Simmer for 20 minutes",
+      "Blend until smooth",
+      "Stir in cream and garnish with basil"
+    ],
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 35
+  },
+  {
+    "id": "meal-037",
+    "name": "Chicken Noodle Soup",
+    "imageUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800",
+    "description": "Comforting chicken noodle soup",
+    "ingredients": ["chicken breast", "egg noodles", "carrots", "celery", "onion", "chicken broth", "thyme", "salt", "pepper"],
+    "instructions": [
+      "Boil chicken in broth until cooked",
+      "Remove and shred chicken",
+      "Add vegetables and noodles to broth",
+      "Cook until tender",
+      "Return chicken and season to taste"
+    ],
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 45
+  },
+  {
+    "id": "meal-038",
+    "name": "Fish Tacos",
+    "imageUrl": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800",
+    "description": "Crispy fish tacos with cabbage slaw",
+    "ingredients": ["white fish", "tortilla", "cabbage", "lime", "cilantro", "sour cream", "chili powder", "flour"],
+    "instructions": [
+      "Season and coat fish in flour",
+      "Fry until crispy and golden",
+      "Make slaw with cabbage and lime",
+      "Warm tortillas",
+      "Assemble tacos with fish, slaw, and toppings"
+    ],
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 25
+  },
+  {
+    "id": "meal-039",
+    "name": "Veggie Burger",
+    "imageUrl": "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=800",
+    "description": "Homemade veggie burger with toppings",
+    "ingredients": ["black beans", "oats", "onion", "garlic", "cumin", "burger bun", "lettuce", "tomato", "avocado"],
+    "instructions": [
+      "Mash beans and mix with oats and spices",
+      "Form into patties",
+      "Cook in pan until crispy",
+      "Toast buns",
+      "Assemble with lettuce, tomato, and avocado"
+    ],
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 30
+  },
+  {
+    "id": "meal-040",
+    "name": "Pasta Salad",
+    "imageUrl": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800",
+    "description": "Cold pasta salad with Italian dressing",
+    "ingredients": ["pasta", "cherry tomatoes", "mozzarella", "olives", "bell peppers", "italian dressing", "basil"],
+    "instructions": [
+      "Cook pasta and cool completely",
+      "Chop vegetables",
+      "Mix pasta with vegetables and cheese",
+      "Toss with Italian dressing",
+      "Garnish with fresh basil"
+    ],
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-041",
+    "name": "Chicken Panini",
+    "imageUrl": "https://images.unsplash.com/photo-1528736235302-52922df5c122?w=800",
+    "description": "Pressed sandwich with chicken and pesto",
+    "ingredients": ["ciabatta bread", "chicken breast", "mozzarella", "tomato", "pesto", "olive oil"],
+    "instructions": [
+      "Grill chicken breast",
+      "Spread pesto on bread",
+      "Layer chicken, cheese, and tomato",
+      "Press in panini maker until golden",
+      "Slice and serve hot"
+    ],
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-042",
+    "name": "Pho",
+    "imageUrl": "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=800",
+    "description": "Vietnamese beef noodle soup",
+    "ingredients": ["rice noodles", "beef broth", "beef slices", "bean sprouts", "basil", "lime", "onion", "ginger", "star anise"],
+    "instructions": [
+      "Simmer broth with spices for 2 hours",
+      "Cook rice noodles",
+      "Slice beef thinly",
+      "Assemble bowls with noodles and raw beef",
+      "Pour hot broth and top with herbs and lime"
+    ],
+    "category": "lunch",
+    "difficulty": "hard",
+    "prepTime": 150
+  },
+  {
+    "id": "meal-043",
+    "name": "Falafel Wrap",
+    "imageUrl": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=800",
+    "description": "Crispy falafel with tahini sauce",
+    "ingredients": ["chickpeas", "parsley", "garlic", "cumin", "pita bread", "tahini", "cucumber", "tomato", "lettuce"],
+    "instructions": [
+      "Blend chickpeas with herbs and spices",
+      "Form into balls and fry until golden",
+      "Make tahini sauce with lemon and garlic",
+      "Warm pita bread",
+      "Assemble wrap with falafel, veggies, and sauce"
+    ],
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 35
+  },
+  {
+    "id": "meal-044",
+    "name": "Ramen Bowl",
+    "imageUrl": "https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=800",
+    "description": "Japanese ramen with pork and soft-boiled egg",
+    "ingredients": ["ramen noodles", "pork belly", "eggs", "chicken broth", "soy sauce", "miso paste", "green onions", "seaweed"],
+    "instructions": [
+      "Simmer broth with miso and soy sauce",
+      "Cook and slice pork belly",
+      "Boil eggs for 6 minutes",
+      "Cook ramen noodles",
+      "Assemble bowl with noodles, broth, pork, and toppings"
+    ],
+    "category": "lunch",
+    "difficulty": "hard",
+    "prepTime": 60
+  },
+  {
+    "id": "meal-045",
+    "name": "Cobb Salad",
+    "imageUrl": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=800",
+    "description": "Composed salad with chicken, bacon, and egg",
+    "ingredients": ["romaine lettuce", "chicken breast", "bacon", "eggs", "avocado", "tomato", "blue cheese", "ranch dressing"],
+    "instructions": [
+      "Grill and slice chicken",
+      "Cook bacon until crispy",
+      "Hard-boil eggs and chop",
+      "Arrange all ingredients on lettuce",
+      "Drizzle with ranch dressing"
+    ],
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 30
+  },
+  {
+    "id": "meal-046",
+    "name": "Margherita Pizza",
+    "imageUrl": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800",
+    "description": "Classic pizza with tomato, mozzarella, and basil",
+    "ingredients": ["pizza dough", "tomato sauce", "mozzarella cheese", "basil", "olive oil", "salt"],
+    "instructions": [
+      "Preheat oven to 475°F",
+      "Roll out pizza dough",
+      "Spread tomato sauce",
+      "Top with mozzarella",
+      "Bake for 12-15 minutes and garnish with basil"
+    ],
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 30
+  },
+  {
+    "id": "meal-047",
+    "name": "Burrito Bowl",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800",
+    "description": "Mexican rice bowl with all the toppings",
+    "ingredients": ["rice", "black beans", "chicken", "corn", "salsa", "cheese", "sour cream", "guacamole", "lettuce"],
+    "instructions": [
+      "Cook rice and season",
+      "Grill chicken and slice",
+      "Heat black beans",
+      "Assemble bowl with rice as base",
+      "Top with all ingredients"
+    ],
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 25
+  },
+  {
+    "id": "meal-048",
+    "name": "Chicken Caesar Wrap",
+    "imageUrl": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=800",
+    "description": "Caesar salad wrapped in a tortilla",
+    "ingredients": ["tortilla", "chicken breast", "romaine lettuce", "parmesan cheese", "caesar dressing", "croutons"],
+    "instructions": [
+      "Grill and slice chicken",
+      "Chop romaine lettuce",
+      "Toss with Caesar dressing",
+      "Place on tortilla with chicken",
+      "Roll tightly and slice in half"
+    ],
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 15
+  },
+  {
+    "id": "meal-049",
+    "name": "Minestrone Soup",
+    "imageUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800",
+    "description": "Italian vegetable soup with pasta",
+    "ingredients": ["tomatoes", "carrots", "celery", "zucchini", "beans", "pasta", "vegetable broth", "basil", "parmesan"],
+    "instructions": [
+      "Sauté vegetables in olive oil",
+      "Add broth and tomatoes",
+      "Simmer for 20 minutes",
+      "Add pasta and beans",
+      "Serve with parmesan and basil"
+    ],
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 40
+  },
+  {
+    "id": "meal-050",
+    "name": "Stir Fry Vegetables",
+    "imageUrl": "https://images.unsplash.com/photo-1543826173-3a2f6c7f6b59?w=800",
+    "description": "Quick vegetable stir fry with soy sauce",
+    "ingredients": ["broccoli", "bell peppers", "carrots", "snap peas", "garlic", "ginger", "soy sauce", "sesame oil"],
+    "instructions": [
+      "Heat oil in wok",
+      "Stir-fry garlic and ginger",
+      "Add vegetables in order of cooking time",
+      "Toss with soy sauce",
+      "Serve over rice"
+    ],
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 15
+  },
+  {
+    "id": "meal-051",
+    "name": "BBQ Chicken Sandwich",
+    "imageUrl": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=800",
+    "description": "Shredded chicken with BBQ sauce on a bun",
+    "ingredients": ["chicken breast", "bbq sauce", "burger bun", "coleslaw", "pickles"],
+    "instructions": [
+      "Cook and shred chicken",
+      "Mix with BBQ sauce",
+      "Toast buns",
+      "Pile chicken on bun",
+      "Top with coleslaw and pickles"
+    ],
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-052",
+    "name": "Philly Cheesesteak",
+    "imageUrl": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=800",
+    "description": "Steak and cheese sub with peppers and onions",
+    "ingredients": ["ribeye steak", "hoagie roll", "provolone cheese", "bell peppers", "onion", "salt", "pepper"],
+    "instructions": [
+      "Slice steak very thin",
+      "Sauté peppers and onions",
+      "Cook steak quickly",
+      "Place in roll with cheese",
+      "Melt cheese and serve hot"
+    ],
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-053",
+    "name": "Spring Rolls",
+    "imageUrl": "https://images.unsplash.com/photo-1594756202469-9ff9799b2e4e?w=800",
+    "description": "Fresh Vietnamese spring rolls with peanut sauce",
+    "ingredients": ["rice paper", "shrimp", "rice noodles", "lettuce", "cucumber", "carrots", "mint", "peanut sauce"],
+    "instructions": [
+      "Soak rice paper in water",
+      "Layer vegetables, noodles, and shrimp",
+      "Roll tightly",
+      "Make peanut dipping sauce",
+      "Serve fresh"
+    ],
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 30
+  },
+  {
+    "id": "meal-054",
+    "name": "French Onion Soup",
+    "imageUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800",
+    "description": "Rich onion soup with cheese toast",
+    "ingredients": ["onions", "beef broth", "white wine", "gruyere cheese", "baguette", "butter", "thyme"],
+    "instructions": [
+      "Caramelize onions slowly for 30 minutes",
+      "Add wine and broth",
+      "Simmer for 30 minutes",
+      "Toast bread with cheese",
+      "Top soup with cheese toast"
+    ],
+    "category": "lunch",
+    "difficulty": "hard",
+    "prepTime": 90
+  },
+  {
+    "id": "meal-055",
+    "name": "Lobster Roll",
+    "imageUrl": "https://images.unsplash.com/photo-1629109850076-9e2e7e8e0f4a?w=800",
+    "description": "New England style lobster roll",
+    "ingredients": ["lobster meat", "hot dog bun", "mayonnaise", "lemon juice", "celery", "butter", "salt"],
+    "instructions": [
+      "Mix lobster with mayo and lemon",
+      "Add diced celery",
+      "Toast buns with butter",
+      "Fill with lobster salad",
+      "Serve immediately"
+    ],
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 15
+  },
+  {
+    "id": "meal-056",
+    "name": "Grilled Salmon",
+    "imageUrl": "https://images.unsplash.com/photo-1485921325833-c519f76c4927?w=800",
+    "description": "Perfectly grilled salmon with lemon",
+    "ingredients": ["salmon fillet", "lemon", "olive oil", "garlic", "dill", "salt", "pepper"],
+    "instructions": [
+      "Season salmon with salt and pepper",
+      "Marinate with olive oil, garlic, and lemon",
+      "Preheat grill to medium-high",
+      "Grill skin-side down for 6 minutes",
+      "Flip and cook 3 more minutes",
+      "Garnish with fresh dill"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 25
+  },
+  {
+    "id": "meal-057",
+    "name": "Spaghetti Carbonara",
+    "imageUrl": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800",
+    "description": "Classic Italian pasta with egg and pancetta",
+    "ingredients": ["spaghetti", "pancetta", "eggs", "parmesan cheese", "black pepper", "salt"],
+    "instructions": [
+      "Cook pasta in salted water",
+      "Crisp pancetta in pan",
+      "Whisk eggs with parmesan",
+      "Toss hot pasta with pancetta",
+      "Mix in egg mixture off heat",
+      "Serve with extra parmesan"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 25
+  },
+  {
+    "id": "meal-058",
+    "name": "Beef Stir Fry",
+    "imageUrl": "https://images.unsplash.com/photo-1543826173-3a2f6c7f6b59?w=800",
+    "description": "Quick beef stir fry with vegetables",
+    "ingredients": ["beef sirloin", "broccoli", "bell peppers", "soy sauce", "ginger", "garlic", "sesame oil", "rice"],
+    "instructions": [
+      "Slice beef thinly",
+      "Heat wok with sesame oil",
+      "Stir-fry beef quickly and remove",
+      "Cook vegetables with ginger and garlic",
+      "Return beef and add soy sauce",
+      "Serve over rice"
+    ],
+    "category": "dinner",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-059",
+    "name": "Roasted Chicken",
+    "imageUrl": "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=800",
+    "description": "Whole roasted chicken with herbs",
+    "ingredients": ["whole chicken", "butter", "garlic", "rosemary", "thyme", "lemon", "salt", "pepper"],
+    "instructions": [
+      "Preheat oven to 425°F",
+      "Rub chicken with butter and herbs",
+      "Stuff with lemon and garlic",
+      "Roast for 60-75 minutes",
+      "Let rest 10 minutes before carving"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 90
+  },
+  {
+    "id": "meal-060",
+    "name": "Tacos al Pastor",
+    "imageUrl": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800",
+    "description": "Mexican pork tacos with pineapple",
+    "ingredients": ["pork shoulder", "pineapple", "chili powder", "cumin", "tortilla", "onion", "cilantro", "lime"],
+    "instructions": [
+      "Marinate pork with spices overnight",
+      "Grill pork and pineapple",
+      "Slice thinly",
+      "Warm tortillas",
+      "Assemble tacos with onion and cilantro",
+      "Serve with lime wedges"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 45
+  },
+  {
+    "id": "meal-061",
+    "name": "Chicken Parmesan",
+    "imageUrl": "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=800",
+    "description": "Breaded chicken with marinara and cheese",
+    "ingredients": ["chicken breast", "breadcrumbs", "parmesan cheese", "mozzarella", "marinara sauce", "eggs", "flour"],
+    "instructions": [
+      "Bread chicken with flour, egg, and breadcrumbs",
+      "Fry until golden",
+      "Top with marinara and cheeses",
+      "Bake at 375°F until cheese melts",
+      "Serve over pasta"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 40
+  },
+  {
+    "id": "meal-062",
+    "name": "Pad Thai",
+    "imageUrl": "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800",
+    "description": "Thai stir-fried noodles with shrimp",
+    "ingredients": ["rice noodles", "shrimp", "eggs", "bean sprouts", "peanuts", "tamarind", "fish sauce", "lime"],
+    "instructions": [
+      "Soak rice noodles",
+      "Make sauce with tamarind and fish sauce",
+      "Stir-fry shrimp and push aside",
+      "Scramble eggs in wok",
+      "Add noodles and sauce",
+      "Top with peanuts and lime"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 30
+  },
+  {
+    "id": "meal-063",
+    "name": "Beef Wellington",
+    "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?w=800",
+    "description": "Beef tenderloin wrapped in puff pastry",
+    "ingredients": ["beef tenderloin", "mushrooms", "puff pastry", "prosciutto", "eggs", "thyme", "butter"],
+    "instructions": [
+      "Sear beef on all sides",
+      "Make mushroom duxelles",
+      "Wrap beef in prosciutto and mushrooms",
+      "Encase in puff pastry",
+      "Brush with egg wash",
+      "Bake at 400°F for 25 minutes"
+    ],
+    "category": "dinner",
+    "difficulty": "hard",
+    "prepTime": 90
+  },
+  {
+    "id": "meal-064",
+    "name": "Lamb Chops",
+    "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947?w=800",
+    "description": "Grilled lamb chops with rosemary",
+    "ingredients": ["lamb chops", "rosemary", "garlic", "olive oil", "lemon", "salt", "pepper"],
+    "instructions": [
+      "Marinate chops with rosemary and garlic",
+      "Let rest at room temperature 30 minutes",
+      "Preheat grill to high",
+      "Grill 3-4 minutes per side",
+      "Let rest before serving"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-065",
+    "name": "Shrimp Scampi",
+    "imageUrl": "https://images.unsplash.com/photo-1633504581786-316c8002b1b9?w=800",
+    "description": "Garlic butter shrimp over pasta",
+    "ingredients": ["shrimp", "linguine", "garlic", "butter", "white wine", "lemon", "parsley", "red pepper flakes"],
+    "instructions": [
+      "Cook pasta according to package",
+      "Sauté garlic in butter",
+      "Add shrimp and cook until pink",
+      "Deglaze with white wine",
+      "Toss with pasta and lemon juice",
+      "Garnish with parsley"
+    ],
+    "category": "dinner",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-066",
+    "name": "Chicken Tikka Masala",
+    "imageUrl": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800",
+    "description": "Creamy Indian chicken curry",
+    "ingredients": ["chicken breast", "yogurt", "tomato sauce", "cream", "garam masala", "cumin", "ginger", "garlic"],
+    "instructions": [
+      "Marinate chicken in yogurt and spices",
+      "Grill or broil chicken",
+      "Make sauce with tomatoes and spices",
+      "Add cream and chicken",
+      "Simmer until thick",
+      "Serve with rice or naan"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 45
+  },
+  {
+    "id": "meal-067",
+    "name": "Ribeye Steak",
+    "imageUrl": "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=800",
+    "description": "Perfect pan-seared ribeye steak",
+    "ingredients": ["ribeye steak", "butter", "garlic", "rosemary", "salt", "pepper"],
+    "instructions": [
+      "Bring steak to room temperature",
+      "Season generously with salt and pepper",
+      "Heat cast iron pan until smoking",
+      "Sear 4 minutes per side",
+      "Baste with butter, garlic, and rosemary",
+      "Rest 5 minutes before serving"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-068",
+    "name": "Lasagna",
+    "imageUrl": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=800",
+    "description": "Classic Italian layered pasta",
+    "ingredients": ["lasagna noodles", "ground beef", "ricotta cheese", "mozzarella", "parmesan", "marinara sauce", "eggs"],
+    "instructions": [
+      "Cook meat sauce with marinara",
+      "Mix ricotta with egg and parmesan",
+      "Layer noodles, meat, ricotta, and mozzarella",
+      "Repeat layers",
+      "Top with mozzarella",
+      "Bake at 375°F for 45 minutes"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 90
+  },
+  {
+    "id": "meal-069",
+    "name": "Fish and Chips",
+    "imageUrl": "https://images.unsplash.com/photo-1580217593608-61931cefc821?w=800",
+    "description": "British classic with crispy battered fish",
+    "ingredients": ["white fish", "potatoes", "flour", "beer", "baking powder", "salt", "vinegar"],
+    "instructions": [
+      "Cut potatoes into chips and fry",
+      "Make batter with flour, beer, and baking powder",
+      "Coat fish in batter",
+      "Deep fry until golden",
+      "Serve with malt vinegar"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 40
+  },
+  {
+    "id": "meal-070",
+    "name": "Pulled Pork",
+    "imageUrl": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=800",
+    "description": "Slow-cooked BBQ pulled pork",
+    "ingredients": ["pork shoulder", "bbq sauce", "brown sugar", "paprika", "garlic powder", "onion", "burger bun"],
+    "instructions": [
+      "Rub pork with spices",
+      "Slow cook for 8 hours at 225°F",
+      "Shred with forks",
+      "Mix with BBQ sauce",
+      "Serve on toasted buns"
+    ],
+    "category": "dinner",
+    "difficulty": "easy",
+    "prepTime": 480
+  },
+  {
+    "id": "meal-071",
+    "name": "Meatballs",
+    "imageUrl": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=800",
+    "description": "Italian meatballs in tomato sauce",
+    "ingredients": ["ground beef", "breadcrumbs", "parmesan cheese", "eggs", "garlic", "marinara sauce", "basil"],
+    "instructions": [
+      "Mix meat with breadcrumbs, egg, and cheese",
+      "Form into balls",
+      "Brown in pan",
+      "Simmer in marinara sauce",
+      "Serve over pasta with basil"
+    ],
+    "category": "dinner",
+    "difficulty": "easy",
+    "prepTime": 40
+  },
+  {
+    "id": "meal-072",
+    "name": "Pork Chops",
+    "imageUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800",
+    "description": "Pan-seared pork chops with herbs",
+    "ingredients": ["pork chops", "garlic", "thyme", "butter", "olive oil", "salt", "pepper"],
+    "instructions": [
+      "Season chops with salt and pepper",
+      "Heat oil in pan",
+      "Sear chops 4 minutes per side",
+      "Add butter, garlic, and thyme",
+      "Baste and let rest"
+    ],
+    "category": "dinner",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-073",
+    "name": "Chicken Fajitas",
+    "imageUrl": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800",
+    "description": "Sizzling chicken fajitas with peppers",
+    "ingredients": ["chicken breast", "bell peppers", "onion", "tortilla", "lime", "cumin", "chili powder", "sour cream"],
+    "instructions": [
+      "Slice chicken and vegetables",
+      "Season with spices",
+      "Sauté in hot pan until charred",
+      "Warm tortillas",
+      "Serve with lime and sour cream"
+    ],
+    "category": "dinner",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-074",
+    "name": "Eggplant Parmesan",
+    "imageUrl": "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=800",
+    "description": "Breaded eggplant with marinara and cheese",
+    "ingredients": ["eggplant", "breadcrumbs", "parmesan cheese", "mozzarella", "marinara sauce", "eggs", "flour"],
+    "instructions": [
+      "Slice and salt eggplant to remove moisture",
+      "Bread with flour, egg, and breadcrumbs",
+      "Fry until golden",
+      "Layer with marinara and cheeses",
+      "Bake until bubbly"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 50
+  },
+  {
+    "id": "meal-075",
+    "name": "Jambalaya",
+    "imageUrl": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=800",
+    "description": "Louisiana rice dish with sausage and shrimp",
+    "ingredients": ["rice", "sausage", "shrimp", "chicken", "bell peppers", "celery", "onion", "cajun seasoning", "tomatoes"],
+    "instructions": [
+      "Brown sausage and chicken",
+      "Sauté vegetables",
+      "Add rice and seasonings",
+      "Simmer with broth and tomatoes",
+      "Add shrimp at end",
+      "Let rest before serving"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 60
+  },
+  {
+    "id": "meal-076",
+    "name": "Beef Tacos",
+    "imageUrl": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800",
+    "description": "Seasoned ground beef tacos",
+    "ingredients": ["ground beef", "tortilla", "lettuce", "tomato", "cheese", "sour cream", "taco seasoning"],
+    "instructions": [
+      "Brown ground beef",
+      "Add taco seasoning and water",
+      "Simmer until thick",
+      "Warm tortillas",
+      "Assemble with toppings"
+    ],
+    "category": "dinner",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-077",
+    "name": "Chicken Curry",
+    "imageUrl": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800",
+    "description": "Aromatic chicken curry with vegetables",
+    "ingredients": ["chicken breast", "coconut milk", "curry powder", "onion", "garlic", "ginger", "potatoes", "carrots"],
+    "instructions": [
+      "Sauté onion, garlic, and ginger",
+      "Add curry powder and cook until fragrant",
+      "Add chicken and vegetables",
+      "Pour in coconut milk",
+      "Simmer until chicken is cooked",
+      "Serve with rice"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 40
+  },
+  {
+    "id": "meal-078",
+    "name": "Stuffed Peppers",
+    "imageUrl": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=800",
+    "description": "Bell peppers stuffed with rice and meat",
+    "ingredients": ["bell peppers", "ground beef", "rice", "tomato sauce", "onion", "cheese", "garlic"],
+    "instructions": [
+      "Cut tops off peppers and remove seeds",
+      "Cook beef with onion and garlic",
+      "Mix with cooked rice and sauce",
+      "Stuff peppers with mixture",
+      "Top with cheese and bake 30 minutes"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 60
+  },
+  {
+    "id": "meal-079",
+    "name": "Chicken Alfredo",
+    "imageUrl": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800",
+    "description": "Creamy fettuccine Alfredo with chicken",
+    "ingredients": ["fettuccine", "chicken breast", "heavy cream", "parmesan cheese", "butter", "garlic", "nutmeg"],
+    "instructions": [
+      "Cook pasta according to package",
+      "Grill and slice chicken",
+      "Make Alfredo sauce with cream and parmesan",
+      "Toss pasta with sauce",
+      "Top with sliced chicken"
+    ],
+    "category": "dinner",
+    "difficulty": "easy",
+    "prepTime": 25
+  },
+  {
+    "id": "meal-080",
+    "name": "Salmon Teriyaki",
+    "imageUrl": "https://images.unsplash.com/photo-1485921325833-c519f76c4927?w=800",
+    "description": "Glazed salmon with teriyaki sauce",
+    "ingredients": ["salmon fillet", "soy sauce", "mirin", "sugar", "ginger", "garlic", "sesame seeds"],
+    "instructions": [
+      "Make teriyaki sauce with soy, mirin, and sugar",
+      "Marinate salmon for 20 minutes",
+      "Pan-sear salmon skin-side down",
+      "Flip and brush with glaze",
+      "Garnish with sesame seeds"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 35
+  },
+  {
+    "id": "meal-081",
+    "name": "Turkey Meatloaf",
+    "imageUrl": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=800",
+    "description": "Classic meatloaf with ketchup glaze",
+    "ingredients": ["ground turkey", "breadcrumbs", "eggs", "onion", "ketchup", "worcestershire sauce", "garlic"],
+    "instructions": [
+      "Mix turkey with breadcrumbs and seasonings",
+      "Form into loaf in baking dish",
+      "Top with ketchup glaze",
+      "Bake at 350°F for 60 minutes",
+      "Let rest before slicing"
+    ],
+    "category": "dinner",
+    "difficulty": "easy",
+    "prepTime": 75
+  },
+  {
+    "id": "meal-082",
+    "name": "Shrimp Fried Rice",
+    "imageUrl": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=800",
+    "description": "Chinese-style fried rice with shrimp",
+    "ingredients": ["rice", "shrimp", "eggs", "peas", "carrots", "soy sauce", "sesame oil", "green onions"],
+    "instructions": [
+      "Use day-old cold rice",
+      "Scramble eggs and set aside",
+      "Stir-fry shrimp and vegetables",
+      "Add rice and break up clumps",
+      "Season with soy sauce and sesame oil",
+      "Mix in eggs and green onions"
+    ],
+    "category": "dinner",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-083",
+    "name": "Shepherd's Pie",
+    "imageUrl": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=800",
+    "description": "Ground lamb with mashed potato topping",
+    "ingredients": ["ground lamb", "potatoes", "carrots", "peas", "onion", "beef broth", "butter", "milk"],
+    "instructions": [
+      "Cook lamb with vegetables",
+      "Add broth and simmer",
+      "Make mashed potatoes",
+      "Layer meat in dish",
+      "Top with mashed potatoes",
+      "Bake until golden"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 60
+  },
+  {
+    "id": "meal-084",
+    "name": "Pork Fried Rice",
+    "imageUrl": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=800",
+    "description": "Fried rice with BBQ pork",
+    "ingredients": ["rice", "pork", "eggs", "peas", "carrots", "soy sauce", "sesame oil", "green onions"],
+    "instructions": [
+      "Dice leftover pork",
+      "Scramble eggs",
+      "Stir-fry vegetables",
+      "Add rice and pork",
+      "Season with soy sauce",
+      "Garnish with green onions"
+    ],
+    "category": "dinner",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-085",
+    "name": "Chicken Enchiladas",
+    "imageUrl": "https://images.unsplash.com/photo-1618040996337-56904b7850b9?w=800",
+    "description": "Rolled tortillas with chicken and cheese",
+    "ingredients": ["tortilla", "chicken breast", "enchilada sauce", "cheese", "onion", "sour cream", "cilantro"],
+    "instructions": [
+      "Cook and shred chicken",
+      "Mix chicken with cheese and onions",
+      "Roll in tortillas",
+      "Cover with enchilada sauce",
+      "Top with more cheese",
+      "Bake until bubbly"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 45
+  },
+  {
+    "id": "meal-086",
+    "name": "Hummus Platter",
+    "imageUrl": "https://images.unsplash.com/photo-1571971219176-8dfb0c8e0c29?w=800",
+    "description": "Creamy hummus with vegetables and pita",
+    "ingredients": ["chickpeas", "tahini", "lemon juice", "garlic", "olive oil", "pita bread", "cucumber", "carrots"],
+    "instructions": [
+      "Blend chickpeas with tahini and lemon",
+      "Add garlic and olive oil",
+      "Blend until smooth",
+      "Drizzle with olive oil",
+      "Serve with vegetables and pita"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 10
+  },
+  {
+    "id": "meal-087",
+    "name": "Guacamole and Chips",
+    "imageUrl": "https://images.unsplash.com/photo-1550947660-2a5fdd6914ec?w=800",
+    "description": "Fresh guacamole with tortilla chips",
+    "ingredients": ["avocado", "lime juice", "cilantro", "tomato", "onion", "jalapeño", "salt", "tortilla chips"],
+    "instructions": [
+      "Mash avocados with lime juice",
+      "Dice tomato, onion, and jalapeño",
+      "Mix all ingredients",
+      "Season with salt",
+      "Serve with tortilla chips"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 10
+  },
+  {
+    "id": "meal-088",
+    "name": "Caprese Skewers",
+    "imageUrl": "https://images.unsplash.com/photo-1592417817038-d13a4ce00a42?w=800",
+    "description": "Mozzarella, tomato, and basil on skewers",
+    "ingredients": ["cherry tomatoes", "mozzarella balls", "basil", "balsamic vinegar", "olive oil"],
+    "instructions": [
+      "Thread tomatoes, mozzarella, and basil on skewers",
+      "Arrange on platter",
+      "Drizzle with balsamic and olive oil",
+      "Season with salt and pepper",
+      "Serve immediately"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 10
+  },
+  {
+    "id": "meal-089",
+    "name": "Buffalo Wings",
+    "imageUrl": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=800",
+    "description": "Spicy buffalo chicken wings",
+    "ingredients": ["chicken wings", "hot sauce", "butter", "garlic powder", "blue cheese dressing", "celery"],
+    "instructions": [
+      "Bake wings at 400°F until crispy",
+      "Mix hot sauce with melted butter",
+      "Toss wings in sauce",
+      "Serve with blue cheese and celery"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 40
+  },
+  {
+    "id": "meal-090",
+    "name": "Nachos",
+    "imageUrl": "https://images.unsplash.com/photo-1582169296194-e4d644c48063?w=800",
+    "description": "Loaded nachos with all the toppings",
+    "ingredients": ["tortilla chips", "cheese", "black beans", "jalapeño", "sour cream", "salsa", "guacamole"],
+    "instructions": [
+      "Layer chips on baking sheet",
+      "Top with cheese and beans",
+      "Bake until cheese melts",
+      "Add jalapeños",
+      "Serve with sour cream, salsa, and guacamole"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 15
+  },
+  {
+    "id": "meal-091",
+    "name": "Cheese Quesadilla",
+    "imageUrl": "https://images.unsplash.com/photo-1618040996337-56904b7850b9?w=800",
+    "description": "Simple cheese quesadilla",
+    "ingredients": ["tortilla", "cheese", "sour cream", "salsa"],
+    "instructions": [
+      "Place cheese on tortilla",
+      "Fold in half",
+      "Cook in pan until golden",
+      "Flip and cook other side",
+      "Serve with sour cream and salsa"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 8
+  },
+  {
+    "id": "meal-092",
+    "name": "Mozzarella Sticks",
+    "imageUrl": "https://images.unsplash.com/photo-1531749668029-2db88e4276c7?w=800",
+    "description": "Crispy fried mozzarella sticks",
+    "ingredients": ["mozzarella cheese", "flour", "eggs", "breadcrumbs", "marinara sauce"],
+    "instructions": [
+      "Cut mozzarella into sticks",
+      "Bread with flour, egg, and breadcrumbs",
+      "Freeze for 30 minutes",
+      "Deep fry until golden",
+      "Serve with marinara sauce"
+    ],
+    "category": "snack",
+    "difficulty": "medium",
+    "prepTime": 45
+  },
+  {
+    "id": "meal-093",
+    "name": "Bruschetta",
+    "imageUrl": "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=800",
+    "description": "Tomato and basil on toasted bread",
+    "ingredients": ["baguette", "tomatoes", "basil", "garlic", "olive oil", "balsamic vinegar"],
+    "instructions": [
+      "Toast baguette slices",
+      "Rub with garlic",
+      "Dice tomatoes and mix with basil",
+      "Top bread with tomato mixture",
+      "Drizzle with balsamic"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 15
+  },
+  {
+    "id": "meal-094",
+    "name": "Deviled Eggs",
+    "imageUrl": "https://images.unsplash.com/photo-1594756202469-9ff9799b2e4e?w=800",
+    "description": "Classic deviled eggs",
+    "ingredients": ["eggs", "mayonnaise", "mustard", "paprika", "salt", "pepper"],
+    "instructions": [
+      "Hard-boil eggs and cool",
+      "Halve eggs and remove yolks",
+      "Mix yolks with mayo and mustard",
+      "Pipe into egg whites",
+      "Sprinkle with paprika"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-095",
+    "name": "Spinach Artichoke Dip",
+    "imageUrl": "https://images.unsplash.com/photo-1571971219176-8dfb0c8e0c29?w=800",
+    "description": "Creamy spinach and artichoke dip",
+    "ingredients": ["spinach", "artichoke hearts", "cream cheese", "sour cream", "parmesan cheese", "garlic", "tortilla chips"],
+    "instructions": [
+      "Mix all ingredients except chips",
+      "Bake at 350°F until bubbly",
+      "Serve hot with tortilla chips"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 30
+  },
+  {
+    "id": "meal-096",
+    "name": "Popcorn",
+    "imageUrl": "https://images.unsplash.com/photo-1578849278619-e73505e9610f?w=800",
+    "description": "Buttery movie-style popcorn",
+    "ingredients": ["popcorn kernels", "butter", "salt"],
+    "instructions": [
+      "Heat oil in large pot",
+      "Add kernels and cover",
+      "Shake pot occasionally",
+      "Remove when popping slows",
+      "Toss with melted butter and salt"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 8
+  },
+  {
+    "id": "meal-097",
+    "name": "Trail Mix",
+    "imageUrl": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=800",
+    "description": "Healthy mix of nuts and dried fruit",
+    "ingredients": ["almonds", "cashews", "raisins", "dried cranberries", "chocolate chips", "pumpkin seeds"],
+    "instructions": [
+      "Mix all ingredients in bowl",
+      "Store in airtight container",
+      "Portion into snack bags"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 5
+  },
+  {
+    "id": "meal-098",
+    "name": "Pigs in a Blanket",
+    "imageUrl": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800",
+    "description": "Mini hot dogs wrapped in pastry",
+    "ingredients": ["mini hot dogs", "crescent roll dough", "mustard"],
+    "instructions": [
+      "Wrap hot dogs in dough triangles",
+      "Place on baking sheet",
+      "Bake at 375°F until golden",
+      "Serve with mustard"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "id": "meal-099",
+    "name": "Fruit Salad",
+    "imageUrl": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800",
+    "description": "Fresh mixed fruit salad",
+    "ingredients": ["strawberries", "blueberries", "grapes", "pineapple", "melon", "mint", "lime juice"],
+    "instructions": [
+      "Chop all fruits",
+      "Mix in large bowl",
+      "Add lime juice",
+      "Garnish with mint",
+      "Chill before serving"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 15
+  },
+  {
+    "id": "meal-100",
+    "name": "Pretzels with Cheese",
+    "imageUrl": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=800",
+    "description": "Soft pretzels with cheese dip",
+    "ingredients": ["pretzels", "cheddar cheese", "milk", "butter", "flour"],
+    "instructions": [
+      "Warm pretzels in oven",
+      "Make cheese sauce with butter and flour",
+      "Add milk and cheese",
+      "Stir until smooth",
+      "Serve pretzels with cheese sauce"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 15
+  },
+  {
+    "id": "meal-101",
+    "name": "Energy Balls",
+    "imageUrl": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=800",
+    "description": "No-bake energy balls with oats and dates",
+    "ingredients": ["dates", "oats", "almond butter", "honey", "chia seeds", "coconut flakes", "chocolate chips"],
+    "instructions": [
+      "Blend dates until smooth",
+      "Mix with oats, almond butter, and honey",
+      "Add chia seeds and chocolate chips",
+      "Roll into balls",
+      "Coat with coconut flakes",
+      "Refrigerate until firm"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 15
+  },
+  {
+    "id": "meal-102",
+    "name": "Apple Slices with Peanut Butter",
+    "imageUrl": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=800",
+    "description": "Fresh apple slices with creamy peanut butter",
+    "ingredients": ["apple", "peanut butter", "honey", "cinnamon"],
+    "instructions": [
+      "Slice apple into wedges",
+      "Mix peanut butter with honey",
+      "Arrange apple slices on plate",
+      "Serve with peanut butter dip",
+      "Sprinkle with cinnamon"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 5
+  }
+]
