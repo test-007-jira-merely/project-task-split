@@ -1,9 +1,29 @@
+import { useEffect } from 'react';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './app/router';
+import { Providers } from './app/providers';
+import { useAppStore } from './stores/useAppStore';
+import { useTheme } from './hooks/useTheme';
+import { getCurrentUser, onAuthStateChange } from './services/supabaseAuth';
+
 function App() {
+  const { setUser } = useAppStore();
+  useTheme();
+
+  useEffect(() => {
+    // Load current user
+    getCurrentUser().then(setUser).catch(console.error);
+
+    // Listen to auth changes
+    const unsubscribe = onAuthStateChange(setUser);
+
+    return () => unsubscribe();
+  }, [setUser]);
+
   return (
-    <div className="min-h-screen bg-background">
-      <h1 className="text-4xl font-bold text-center pt-20">MealGen</h1>
-      <p className="text-center text-muted-foreground mt-4">Foundation Ready</p>
-    </div>
+    <Providers>
+      <RouterProvider router={router} />
+    </Providers>
   );
 }
 
