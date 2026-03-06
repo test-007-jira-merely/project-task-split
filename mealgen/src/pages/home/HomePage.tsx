@@ -1,40 +1,38 @@
-import { useState, useEffect } from 'react';
-import { SparklesIcon } from '@heroicons/react/24/outline';
-import { AnimatedContainer, Button, EmptyState, LoadingSkeleton } from '@/components/ui';
-import { MealCard, MealDetailsModal } from '@/components/meal';
-import { AppLayout } from '@/components/layout';
+import { useState } from 'react';
+import { AppLayout } from '@/components/layout/AppLayout';
+import { Button } from '@/components/ui/Button';
+import { MealCard } from '@/components/meal/MealCard';
+import { MealDetailsModal } from '@/components/meal/MealDetailsModal';
+import { EmptyState } from '@/components/ui/EmptyState';
+import { AnimatedContainer } from '@/components/ui/AnimatedContainer';
 import { useMeals } from '@/hooks/useMeals';
+import { useFavorites } from '@/hooks/useFavorites';
+import { useHistory } from '@/hooks/useHistory';
 import { useAppStore } from '@/stores/useAppStore';
+import { SparklesIcon } from '@heroicons/react/24/outline';
 import type { Meal } from '@/types';
 
 export function HomePage() {
-  const { data: meals, isLoading } = useMeals();
-  const currentMeal = useAppStore((state) => state.currentMeal);
-  const generateRandomMeal = useAppStore((state) => state.generateRandomMeal);
-  const isFavorite = useAppStore((state) => state.isFavorite);
-  const addFavorite = useAppStore((state) => state.addFavorite);
-  const removeFavorite = useAppStore((state) => state.removeFavorite);
-  const addToHistory = useAppStore((state) => state.addToHistory);
+  const { data: meals = [] } = useMeals();
+  const { addFavorite, removeFavorite } = useFavorites();
+  const { addToHistory } = useHistory();
+  const currentMeal = useAppStore(state => state.currentMeal);
+  const generateRandomMeal = useAppStore(state => state.generateRandomMeal);
+  const user = useAppStore(state => state.user);
+  const isFavorite = useAppStore(state => state.isFavorite);
 
   const [selectedMeal, setSelectedMeal] = useState<Meal | null>(null);
 
-  useEffect(() => {
-    // Generate random meal on mount if none exists
-    if (meals && meals.length > 0 && !currentMeal) {
+  const handleGenerate = () => {
+    if (meals.length > 0) {
       generateRandomMeal(meals);
-    }
-  }, [meals, currentMeal, generateRandomMeal]);
-
-  const handleGenerateMeal = () => {
-    if (meals && meals.length > 0) {
-      generateRandomMeal(meals);
-      if (currentMeal) {
+      if (user && currentMeal) {
         addToHistory(currentMeal.id);
       }
     }
   };
 
-  const handleToggleFavorite = (mealId: string) => {
+  const handleFavoriteToggle = (mealId: string) => {
     if (isFavorite(mealId)) {
       removeFavorite(mealId);
     } else {
@@ -44,60 +42,48 @@ export function HomePage() {
 
   return (
     <AppLayout>
-      <AnimatedContainer>
-        {/* Header */}
+      <AnimatedContainer className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            What's for{' '}
-            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
-              dinner
-            </span>
-            ?
+          <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent">
+            Discover Your Next Meal
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
-            Let us surprise you with a random meal suggestion
+            Let AI-powered suggestions inspire your culinary journey
           </p>
 
           <Button
-            onClick={handleGenerateMeal}
-            variant="primary"
+            onClick={handleGenerate}
             size="lg"
             icon={<SparklesIcon className="w-6 h-6" />}
-            disabled={isLoading || !meals}
+            className="shadow-2xl"
           >
             Generate Random Meal
           </Button>
         </div>
 
-        {/* Current Meal Display */}
-        <div className="max-w-3xl mx-auto">
-          {isLoading ? (
-            <LoadingSkeleton count={1} height="h-96" />
-          ) : currentMeal ? (
+        {currentMeal ? (
+          <AnimatedContainer>
             <MealCard
               meal={currentMeal}
-              onFavorite={() => handleToggleFavorite(currentMeal.id)}
+              onFavorite={() => handleFavoriteToggle(currentMeal.id)}
               isFavorite={isFavorite(currentMeal.id)}
               onClick={() => setSelectedMeal(currentMeal)}
-              showActions
+              showActions={!!user}
             />
-          ) : (
-            <EmptyState
-              icon={<SparklesIcon className="w-16 h-16" />}
-              title="No meal generated yet"
-              description="Click the button above to get your first random meal suggestion!"
-            />
-          )}
-        </div>
+          </AnimatedContainer>
+        ) : (
+          <EmptyState
+            title="No meal generated yet"
+            description="Click the button above to discover a delicious meal"
+            icon={<SparklesIcon className="w-16 h-16" />}
+          />
+        )}
 
-        {/* Meal Details Modal */}
         <MealDetailsModal
           meal={selectedMeal}
           isOpen={!!selectedMeal}
           onClose={() => setSelectedMeal(null)}
-          onFavorite={
-            selectedMeal ? () => handleToggleFavorite(selectedMeal.id) : undefined
-          }
+          onFavorite={selectedMeal ? () => handleFavoriteToggle(selectedMeal.id) : undefined}
           isFavorite={selectedMeal ? isFavorite(selectedMeal.id) : false}
         />
       </AnimatedContainer>

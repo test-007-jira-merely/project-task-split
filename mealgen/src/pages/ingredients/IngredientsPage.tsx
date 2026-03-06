@@ -1,54 +1,44 @@
 import { useState, useMemo } from 'react';
-import { AnimatePresence } from 'framer-motion';
-import { BeakerIcon } from '@heroicons/react/24/outline';
-import { AnimatedContainer, EmptyState, LoadingSkeleton, Button } from '@/components/ui';
-import { MealCard, MealDetailsModal } from '@/components/meal';
-import { IngredientInput, IngredientTag } from '@/components/ingredients';
-import { AppLayout } from '@/components/layout';
+import { AppLayout } from '@/components/layout/AppLayout';
+import { IngredientInput } from '@/components/ingredients/IngredientInput';
+import { IngredientTag } from '@/components/ingredients/IngredientTag';
+import { MealCard } from '@/components/meal/MealCard';
+import { MealDetailsModal } from '@/components/meal/MealDetailsModal';
+import { EmptyState } from '@/components/ui/EmptyState';
+import { AnimatedContainer } from '@/components/ui/AnimatedContainer';
 import { useMeals } from '@/hooks/useMeals';
+import { useFavorites } from '@/hooks/useFavorites';
 import { useAppStore } from '@/stores/useAppStore';
-import { filterMealsByIngredients, extractUniqueIngredients, suggestIngredients } from '@/utils/matching';
+import { filterMealsByIngredients, suggestIngredients, extractUniqueIngredients } from '@/utils/matching';
+import { BeakerIcon } from '@heroicons/react/24/outline';
 import type { Meal } from '@/types';
+import { AnimatePresence } from 'framer-motion';
 
 export function IngredientsPage() {
-  const { data: meals, isLoading } = useMeals();
-  const ingredients = useAppStore((state) => state.ingredients);
-  const addIngredient = useAppStore((state) => state.addIngredient);
-  const removeIngredient = useAppStore((state) => state.removeIngredient);
-  const clearIngredients = useAppStore((state) => state.clearIngredients);
-  const isFavorite = useAppStore((state) => state.isFavorite);
-  const addFavorite = useAppStore((state) => state.addFavorite);
-  const removeFavorite = useAppStore((state) => state.removeFavorite);
+  const { data: meals = [] } = useMeals();
+  const { addFavorite, removeFavorite } = useFavorites();
+  const ingredients = useAppStore(state => state.ingredients);
+  const addIngredient = useAppStore(state => state.addIngredient);
+  const removeIngredient = useAppStore(state => state.removeIngredient);
+  const user = useAppStore(state => state.user);
+  const isFavorite = useAppStore(state => state.isFavorite);
 
-  const [inputValue, setInputValue] = useState('');
   const [selectedMeal, setSelectedMeal] = useState<Meal | null>(null);
+  const [inputValue, setInputValue] = useState('');
 
-  // Extract all available ingredients for suggestions
-  const allIngredients = useMemo(() => {
-    if (!meals) return [];
-    return extractUniqueIngredients(meals);
-  }, [meals]);
+  const allIngredients = useMemo(() => extractUniqueIngredients(meals), [meals]);
 
-  // Get suggestions based on input
-  const suggestions = useMemo(() => {
-    if (!inputValue || inputValue.length < 2) return [];
-    return suggestIngredients(inputValue, allIngredients).filter(
-      (suggestion) => !ingredients.includes(suggestion.toLowerCase())
-    );
-  }, [inputValue, allIngredients, ingredients]);
+  const suggestions = useMemo(
+    () => suggestIngredients(inputValue, allIngredients),
+    [inputValue, allIngredients]
+  );
 
-  // Filter meals based on ingredients
-  const filteredMeals = useMemo(() => {
-    if (!meals || ingredients.length === 0) return [];
-    return filterMealsByIngredients(meals, ingredients);
-  }, [meals, ingredients]);
+  const filteredMeals = useMemo(
+    () => filterMealsByIngredients(meals, ingredients),
+    [meals, ingredients]
+  );
 
-  const handleAddIngredient = (ingredient: string) => {
-    addIngredient(ingredient);
-    setInputValue('');
-  };
-
-  const handleToggleFavorite = (mealId: string) => {
+  const handleFavoriteToggle = (mealId: string) => {
     if (isFavorite(mealId)) {
       removeFavorite(mealId);
     } else {
@@ -58,49 +48,27 @@ export function IngredientsPage() {
 
   return (
     <AppLayout>
-      <AnimatedContainer>
-        {/* Header */}
+      <AnimatedContainer className="max-w-7xl mx-auto">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
-            Find Meals by{' '}
-            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
-              Ingredients
-            </span>
-          </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400">
-            Add ingredients you have, and we'll find matching meals
+          <h1 className="text-4xl font-bold mb-2">Ingredient-Based Meal Finder</h1>
+          <p className="text-gray-600 dark:text-gray-400">
+            Enter your available ingredients and discover meals you can make
           </p>
         </div>
 
-        {/* Ingredient Input */}
-        <div className="mb-6">
+        <div className="glass-card p-6 mb-8">
           <IngredientInput
             value={inputValue}
             onChange={setInputValue}
-            onAdd={handleAddIngredient}
+            onAdd={addIngredient}
             suggestions={suggestions}
-            placeholder="Type an ingredient (e.g., chicken, tomato)..."
+            placeholder="Type an ingredient (e.g., chicken, tomato, pasta)..."
           />
-        </div>
 
-        {/* Selected Ingredients */}
-        {ingredients.length > 0 && (
-          <div className="mb-8">
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
-                Your Ingredients ({ingredients.length})
-              </h2>
-              <Button
-                onClick={clearIngredients}
-                variant="ghost"
-                size="sm"
-              >
-                Clear All
-              </Button>
-            </div>
-            <div className="flex flex-wrap gap-2">
+          {ingredients.length > 0 && (
+            <div className="mt-4 flex flex-wrap gap-2">
               <AnimatePresence>
-                {ingredients.map((ingredient) => (
+                {ingredients.map(ingredient => (
                   <IngredientTag
                     key={ingredient}
                     ingredient={ingredient}
@@ -109,62 +77,50 @@ export function IngredientsPage() {
                 ))}
               </AnimatePresence>
             </div>
-          </div>
-        )}
+          )}
+        </div>
 
-        {/* Results */}
-        <div>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            {ingredients.length > 0
-              ? `Matching Meals (${filteredMeals.length})`
-              : 'Add ingredients to find meals'}
-          </h2>
-
-          {isLoading ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <LoadingSkeleton count={6} height="h-96" />
+        {ingredients.length === 0 ? (
+          <EmptyState
+            title="Add ingredients to get started"
+            description="Enter the ingredients you have available and we'll find matching meals"
+            icon={<BeakerIcon className="w-16 h-16" />}
+          />
+        ) : filteredMeals.length === 0 ? (
+          <EmptyState
+            title="No meals found"
+            description="Try adding different ingredients or remove some to see more results"
+            icon={<BeakerIcon className="w-16 h-16" />}
+          />
+        ) : (
+          <>
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold">
+                Found {filteredMeals.length} meal{filteredMeals.length !== 1 ? 's' : ''}
+              </h2>
             </div>
-          ) : ingredients.length === 0 ? (
-            <EmptyState
-              icon={<BeakerIcon className="w-16 h-16" />}
-              title="No ingredients added"
-              description="Start by adding some ingredients you have available, and we'll show you matching meal options."
-            />
-          ) : filteredMeals.length === 0 ? (
-            <EmptyState
-              icon={<BeakerIcon className="w-16 h-16" />}
-              title="No matching meals found"
-              description="Try adjusting your ingredients to find more meal options."
-              action={{
-                label: 'Clear Ingredients',
-                onClick: clearIngredients,
-              }}
-            />
-          ) : (
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredMeals.map((match) => (
+              {filteredMeals.map(match => (
                 <MealCard
                   key={match.meal.id}
                   meal={match.meal}
                   matchPercentage={match.matchPercentage}
-                  onFavorite={() => handleToggleFavorite(match.meal.id)}
+                  onFavorite={() => handleFavoriteToggle(match.meal.id)}
                   isFavorite={isFavorite(match.meal.id)}
                   onClick={() => setSelectedMeal(match.meal)}
-                  showActions
+                  showActions={!!user}
                 />
               ))}
             </div>
-          )}
-        </div>
+          </>
+        )}
 
-        {/* Meal Details Modal */}
         <MealDetailsModal
           meal={selectedMeal}
           isOpen={!!selectedMeal}
           onClose={() => setSelectedMeal(null)}
-          onFavorite={
-            selectedMeal ? () => handleToggleFavorite(selectedMeal.id) : undefined
-          }
+          onFavorite={selectedMeal ? () => handleFavoriteToggle(selectedMeal.id) : undefined}
           isFavorite={selectedMeal ? isFavorite(selectedMeal.id) : false}
         />
       </AnimatedContainer>

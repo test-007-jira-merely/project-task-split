@@ -1,31 +1,30 @@
 import { useState, useMemo } from 'react';
-import { ClockIcon } from '@heroicons/react/24/outline';
-import { AnimatedContainer, EmptyState, LoadingSkeleton } from '@/components/ui';
-import { MealCard, MealDetailsModal } from '@/components/meal';
-import { AppLayout } from '@/components/layout';
+import { AppLayout } from '@/components/layout/AppLayout';
+import { MealCard } from '@/components/meal/MealCard';
+import { MealDetailsModal } from '@/components/meal/MealDetailsModal';
+import { EmptyState } from '@/components/ui/EmptyState';
+import { AnimatedContainer } from '@/components/ui/AnimatedContainer';
 import { useMeals } from '@/hooks/useMeals';
+import { useHistory } from '@/hooks/useHistory';
+import { useFavorites } from '@/hooks/useFavorites';
 import { useAppStore } from '@/stores/useAppStore';
+import { ClockIcon } from '@heroicons/react/24/outline';
 import type { Meal } from '@/types';
 
 export function HistoryPage() {
-  const { data: meals, isLoading } = useMeals();
-  const history = useAppStore((state) => state.history);
-  const isFavorite = useAppStore((state) => state.isFavorite);
-  const addFavorite = useAppStore((state) => state.addFavorite);
-  const removeFavorite = useAppStore((state) => state.removeFavorite);
+  const { data: meals = [] } = useMeals();
+  const { addFavorite, removeFavorite } = useFavorites();
+  const { history } = useHistory();
+  const isFavorite = useAppStore(state => state.isFavorite);
 
   const [selectedMeal, setSelectedMeal] = useState<Meal | null>(null);
 
-  // Get history meals in order
-  const historyMeals = useMemo(() => {
-    if (!meals) return [];
-    // Map history IDs to meals, maintaining order
-    return history
-      .map((id) => meals.find((meal) => meal.id === id))
-      .filter((meal): meal is Meal => meal !== undefined);
-  }, [meals, history]);
+  const historyMeals = useMemo(
+    () => history.map((id: string) => meals.find(meal => meal.id === id)).filter((meal): meal is Meal => meal !== undefined),
+    [meals, history]
+  );
 
-  const handleToggleFavorite = (mealId: string) => {
+  const handleFavoriteToggle = (mealId: string) => {
     if (isFavorite(mealId)) {
       removeFavorite(mealId);
     } else {
@@ -35,61 +34,44 @@ export function HistoryPage() {
 
   return (
     <AppLayout>
-      <AnimatedContainer>
-        {/* Header */}
+      <AnimatedContainer className="max-w-7xl mx-auto">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
-            Your{' '}
-            <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
-              History
-            </span>
-          </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400">
-            Recently generated meals
+          <h1 className="text-4xl font-bold mb-2">Meal History</h1>
+          <p className="text-gray-600 dark:text-gray-400">
+            Recently generated and viewed meals
           </p>
         </div>
 
-        {/* Results */}
-        <div>
-          {isLoading ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <LoadingSkeleton count={6} height="h-96" />
-            </div>
-          ) : historyMeals.length === 0 ? (
-            <EmptyState
-              icon={<ClockIcon className="w-16 h-16" />}
-              title="No history yet"
-              description="Your generated meals will appear here. Start by generating random meals from the home page."
-            />
-          ) : (
-            <>
-              <p className="text-gray-600 dark:text-gray-400 mb-6">
-                {historyMeals.length} {historyMeals.length === 1 ? 'meal' : 'meals'} in history
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {historyMeals.map((meal) => (
-                  <MealCard
-                    key={meal.id}
-                    meal={meal}
-                    onFavorite={() => handleToggleFavorite(meal.id)}
-                    isFavorite={isFavorite(meal.id)}
-                    onClick={() => setSelectedMeal(meal)}
-                    showActions
-                  />
-                ))}
-              </div>
-            </>
-          )}
-        </div>
+        {historyMeals.length === 0 ? (
+          <EmptyState
+            title="No history yet"
+            description="Meals you generate or view will appear here"
+            icon={<ClockIcon className="w-16 h-16" />}
+            action={{
+              label: "Generate a Meal",
+              onClick: () => window.location.href = '/',
+            }}
+          />
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {historyMeals.map(meal => (
+              <MealCard
+                key={meal.id}
+                meal={meal}
+                onFavorite={() => handleFavoriteToggle(meal.id)}
+                isFavorite={isFavorite(meal.id)}
+                onClick={() => setSelectedMeal(meal)}
+                showActions
+              />
+            ))}
+          </div>
+        )}
 
-        {/* Meal Details Modal */}
         <MealDetailsModal
           meal={selectedMeal}
           isOpen={!!selectedMeal}
           onClose={() => setSelectedMeal(null)}
-          onFavorite={
-            selectedMeal ? () => handleToggleFavorite(selectedMeal.id) : undefined
-          }
+          onFavorite={selectedMeal ? () => handleFavoriteToggle(selectedMeal.id) : undefined}
           isFavorite={selectedMeal ? isFavorite(selectedMeal.id) : false}
         />
       </AnimatedContainer>

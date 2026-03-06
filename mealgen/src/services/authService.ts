@@ -2,95 +2,74 @@ import { supabase } from './supabase';
 import type { User } from '@/types';
 
 export const authService = {
-  async signUp(email: string, password: string): Promise<User> {
+  signUp: async (email: string, password: string) => {
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
     });
 
     if (error) throw error;
-    if (!data.user) throw new Error('No user returned from signup');
 
-    return {
-      id: data.user.id,
-      email: data.user.email!,
-      created_at: data.user.created_at,
-      is_admin: false,
-    };
+    if (data.user) {
+      // @ts-expect-error - Supabase type inference issue
+      await supabase.from('users').insert({
+        id: data.user.id,
+        email: data.user.email!,
+        is_admin: false,
+      });
+    }
+
+    return data;
   },
 
-  async signIn(email: string, password: string): Promise<User> {
+  signIn: async (email: string, password: string) => {
     const { data, error } = await supabase.auth.signInWithPassword({
       email,
       password,
     });
 
     if (error) throw error;
-    if (!data.user) throw new Error('No user returned from sign in');
-
-    // Fetch user profile to check admin status
-    const { data: profile } = await supabase
-      .from('users')
-      .select('is_admin')
-      .eq('id', data.user.id)
-      .single();
-
-    return {
-      id: data.user.id,
-      email: data.user.email!,
-      created_at: data.user.created_at,
-      is_admin: (profile as any)?.is_admin || false,
-    };
+    return data;
   },
 
-  async signOut(): Promise<void> {
+  signOut: async () => {
     const { error } = await supabase.auth.signOut();
     if (error) throw error;
   },
 
-  async getCurrentUser(): Promise<User | null> {
+  getCurrentUser: async (): Promise<User | null> => {
     const { data: { user } } = await supabase.auth.getUser();
 
     if (!user) return null;
 
-    // Fetch user profile to check admin status
-    const { data: profile } = await supabase
+    const { data: userData } = await supabase
       .from('users')
-      .select('is_admin')
+      .select('*')
       .eq('id', user.id)
       .single();
 
+    if (!userData) return null;
+
     return {
-      id: user.id,
-      email: user.email!,
-      created_at: user.created_at,
-      is_admin: (profile as any)?.is_admin || false,
+      // @ts-expect-error - Supabase type inference issue
+      id: userData.id,
+      // @ts-expect-error - Supabase type inference issue
+      email: userData.email,
+      // @ts-expect-error - Supabase type inference issue
+      created_at: userData.created_at,
+      // @ts-expect-error - Supabase type inference issue
+      is_admin: userData.is_admin,
     };
   },
 
-  onAuthStateChange(callback: (user: User | null) => void) {
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      async (_event, session) => {
-        if (session?.user) {
-          // Fetch user profile to check admin status
-          const { data: profile } = await supabase
-            .from('users')
-            .select('is_admin')
-            .eq('id', session.user.id)
-            .single();
-
-          callback({
-            id: session.user.id,
-            email: session.user.email!,
-            created_at: session.user.created_at,
-            is_admin: (profile as any)?.is_admin || false,
-          });
-        } else {
-          callback(null);
-        }
+  onAuthStateChange: (callback: (user: User | null) => void) => {
+    return supabase.auth.onAuthStateChange(async (_event, session) => {
+      if (session?.user) {
+        const user = await authService.getCurrentUser();
+        callback(user);
+      } else {
+        callback(null);
       }
-    );
-
-    return subscription;
+    });
   },
 };

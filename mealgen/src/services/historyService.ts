@@ -1,8 +1,7 @@
 import { supabase } from './supabase';
-import type { UserHistory } from '@/types';
 
 export const historyService = {
-  async getHistory(userId: string): Promise<string[]> {
+  getHistory: async (userId: string): Promise<string[]> => {
     const { data, error } = await supabase
       .from('user_history')
       .select('meal_id')
@@ -11,23 +10,16 @@ export const historyService = {
       .limit(50);
 
     if (error) throw error;
-
-    return (data as any)?.map((history: any) => history.meal_id) || [];
+    // @ts-expect-error - Supabase type inference issue
+    return data.map(h => h.meal_id);
   },
 
-  async addToHistory(userId: string, mealId: string): Promise<UserHistory> {
-    const { data, error } = await supabase
+  addToHistory: async (userId: string, mealId: string) => {
+    const { error } = await supabase
       .from('user_history')
-      .insert({
-        user_id: userId,
-        meal_id: mealId,
-      } as any)
-      .select()
-      .single();
+      // @ts-expect-error - Supabase type inference issue
+      .insert({ user_id: userId, meal_id: mealId });
 
     if (error) throw error;
-    if (!data) throw new Error('Failed to add to history');
-
-    return data as any;
   },
 };

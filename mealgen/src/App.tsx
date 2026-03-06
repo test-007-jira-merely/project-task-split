@@ -1,40 +1,32 @@
 import { useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { Providers } from '@/app/providers';
-import { AppRouter } from '@/app/router';
-import { authService } from '@/services/authService';
-import { useAppStore } from '@/stores/useAppStore';
+import { Providers } from './app/providers';
+import { AppRouter } from './app/router';
+import { useTheme } from './hooks/useTheme';
+import { useAppStore } from './stores/useAppStore';
+import { authService } from './services/authService';
 
-function App() {
-  const setUser = useAppStore((state) => state.setUser);
+function AppContent() {
+  useTheme();
+  const setUser = useAppStore(state => state.setUser);
 
   useEffect(() => {
-    // Initialize auth state on mount
-    const initAuth = async () => {
-      try {
-        const user = await authService.getCurrentUser();
-        setUser(user);
-      } catch (error) {
-        console.error('Failed to get current user:', error);
-      }
-    };
+    authService.getCurrentUser().then(setUser);
 
-    initAuth();
-
-    // Subscribe to auth state changes
-    const subscription = authService.onAuthStateChange((user) => {
-      setUser(user);
-    });
-
+    const { data } = authService.onAuthStateChange(setUser);
     return () => {
-      subscription.unsubscribe();
+      data.subscription.unsubscribe();
     };
   }, [setUser]);
 
+  return <AppRouter />;
+}
+
+function App() {
   return (
     <BrowserRouter>
       <Providers>
-        <AppRouter />
+        <AppContent />
       </Providers>
     </BrowserRouter>
   );

@@ -1,43 +1,35 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { useEffect } from 'react';
 import { historyService } from '@/services/historyService';
 import { useAppStore } from '@/stores/useAppStore';
+import { useEffect } from 'react';
 
 export function useHistory() {
   const queryClient = useQueryClient();
-  const user = useAppStore((state) => state.user);
-  const setHistory = useAppStore((state) => state.setHistory);
+  const user = useAppStore(state => state.user);
+  const setHistory = useAppStore(state => state.setHistory);
 
-  const query = useQuery({
+  const { data: history = [] } = useQuery({
     queryKey: ['history', user?.id],
-    queryFn: () => {
-      if (!user) return [];
-      return historyService.getHistory(user.id);
-    },
+    queryFn: () => historyService.getHistory(user!.id),
     enabled: !!user,
   });
 
   useEffect(() => {
-    if (query.data) {
-      setHistory(query.data);
+    if (history) {
+      setHistory(history);
     }
-  }, [query.data, setHistory]);
+  }, [history, setHistory]);
 
   const addMutation = useMutation({
-    mutationFn: (mealId: string) => {
-      if (!user) throw new Error('User not authenticated');
-      return historyService.addToHistory(user.id, mealId);
-    },
+    mutationFn: (mealId: string) => historyService.addToHistory(user!.id, mealId),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['history', user?.id] });
     },
   });
 
   return {
-    history: query.data || [],
-    isLoading: query.isLoading,
-    error: query.error,
+    history,
     addToHistory: addMutation.mutate,
-    isAddingToHistory: addMutation.isPending,
+    isLoading: addMutation.isPending,
   };
 }

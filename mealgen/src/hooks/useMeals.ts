@@ -1,12 +1,12 @@
 import { useQuery } from '@tanstack/react-query';
 import { mealService } from '@/services/mealService';
-import type { Meal } from '@/types';
 
 export function useMeals() {
-  return useQuery<Meal[], Error>({
+  return useQuery({
     queryKey: ['meals'],
-    queryFn: mealService.getLocalMeals,
-    staleTime: Infinity, // Local data never becomes stale
-    gcTime: Infinity, // Cache data indefinitely (previously cacheTime)
+    queryFn: () => {
+      const localMeals = mealService.getLocalMeals();
+      return localMeals;
+    },
   });
 }

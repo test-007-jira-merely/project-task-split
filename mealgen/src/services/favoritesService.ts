@@ -1,36 +1,27 @@
 import { supabase } from './supabase';
-import type { Favorite } from '@/types';
 
 export const favoritesService = {
-  async getFavorites(userId: string): Promise<string[]> {
+  getFavorites: async (userId: string): Promise<string[]> => {
     const { data, error } = await supabase
       .from('favorites')
       .select('meal_id')
-      .eq('user_id', userId)
-      .order('created_at', { ascending: false });
+      .eq('user_id', userId);
 
     if (error) throw error;
-
-    return (data as any)?.map((fav: any) => fav.meal_id) || [];
+    // @ts-expect-error - Supabase type inference issue
+    return data.map(f => f.meal_id);
   },
 
-  async addFavorite(userId: string, mealId: string): Promise<Favorite> {
-    const { data, error } = await supabase
+  addFavorite: async (userId: string, mealId: string) => {
+    const { error } = await supabase
       .from('favorites')
-      .insert({
-        user_id: userId,
-        meal_id: mealId,
-      } as any)
-      .select()
-      .single();
+      // @ts-expect-error - Supabase type inference issue
+      .insert({ user_id: userId, meal_id: mealId });
 
     if (error) throw error;
-    if (!data) throw new Error('Failed to add favorite');
-
-    return data as any;
   },
 
-  async removeFavorite(userId: string, mealId: string): Promise<void> {
+  removeFavorite: async (userId: string, mealId: string) => {
     const { error } = await supabase
       .from('favorites')
       .delete()
