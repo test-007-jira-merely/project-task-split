@@ -5,7 +5,7 @@ import { useAppStore } from '@/stores/useAppStore';
 export const useFavorites = () => {
   const { user, favorites, setFavorites, addFavorite, removeFavorite } = useAppStore();
 
-  const { data, isLoading } = useQuery({
+  const { isLoading } = useQuery({
     queryKey: ['favorites', user?.id],
     queryFn: async () => {
       if (!user) return [];

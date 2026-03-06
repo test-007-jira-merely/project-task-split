@@ -5,7 +5,7 @@ import { useAppStore } from '@/stores/useAppStore';
 export const useHistory = () => {
   const { user, history, setHistory, addToHistory } = useAppStore();
 
-  const { data, isLoading } = useQuery({
+  const { isLoading } = useQuery({
     queryKey: ['history', user?.id],
     queryFn: async () => {
       if (!user) return [];
