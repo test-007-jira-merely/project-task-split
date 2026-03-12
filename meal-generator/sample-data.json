@@ -1,0 +1,54 @@
+{
+  "meals": [
+    {
+      "name": "Classic Pancakes",
+      "description": "Fluffy golden pancakes perfect for a weekend breakfast",
+      "imageUrl": "https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=800",
+      "ingredients": ["2 cups flour", "2 eggs", "1 cup milk", "2 tbsp sugar", "2 tsp baking powder", "pinch of salt", "butter for cooking"],
+      "instructions": ["Mix dry ingredients in a bowl", "Whisk eggs and milk together", "Combine wet and dry ingredients", "Heat a pan with butter", "Pour batter and cook until bubbles form", "Flip and cook other side", "Serve warm with syrup"],
+      "category": "breakfast",
+      "difficulty": "easy",
+      "preparationTime": 20
+    },
+    {
+      "name": "Spaghetti Carbonara",
+      "description": "Creamy Italian pasta with bacon and parmesan",
+      "imageUrl": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800",
+      "ingredients": ["400g spaghetti", "200g bacon", "4 eggs", "100g parmesan cheese", "black pepper", "salt"],
+      "instructions": ["Cook spaghetti according to package", "Fry bacon until crispy", "Beat eggs with grated parmesan", "Drain pasta, reserve some water", "Mix hot pasta with bacon", "Remove from heat, add egg mixture", "Toss quickly, add pasta water if needed", "Season with pepper and serve"],
+      "category": "dinner",
+      "difficulty": "medium",
+      "preparationTime": 25
+    },
+    {
+      "name": "Greek Salad",
+      "description": "Fresh Mediterranean salad with feta cheese",
+      "imageUrl": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800",
+      "ingredients": ["3 tomatoes", "1 cucumber", "1 red onion", "200g feta cheese", "black olives", "olive oil", "lemon juice", "oregano"],
+      "instructions": ["Chop tomatoes and cucumber", "Slice red onion thinly", "Combine vegetables in a bowl", "Add olives and cubed feta", "Drizzle with olive oil and lemon juice", "Sprinkle oregano", "Toss gently and serve"],
+      "category": "lunch",
+      "difficulty": "easy",
+      "preparationTime": 15
+    },
+    {
+      "name": "Chicken Stir-Fry",
+      "description": "Quick and healthy Asian-inspired stir-fry",
+      "imageUrl": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=800",
+      "ingredients": ["500g chicken breast", "2 bell peppers", "1 broccoli head", "3 cloves garlic", "2 tbsp soy sauce", "1 tbsp sesame oil", "1 tsp ginger", "rice for serving"],
+      "instructions": ["Cut chicken into bite-sized pieces", "Chop vegetables", "Heat sesame oil in wok", "Cook chicken until golden", "Add garlic and ginger", "Add vegetables and stir-fry", "Pour soy sauce and toss", "Serve over rice"],
+      "category": "dinner",
+      "difficulty": "medium",
+      "preparationTime": 30
+    },
+    {
+      "name": "Avocado Toast",
+      "description": "Simple and nutritious breakfast or snack",
+      "imageUrl": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=800",
+      "ingredients": ["2 slices bread", "1 ripe avocado", "1 lemon", "salt", "pepper", "red pepper flakes", "olive oil"],
+      "instructions": ["Toast bread until golden", "Mash avocado with fork", "Add lemon juice, salt, and pepper", "Spread avocado on toast", "Drizzle with olive oil", "Sprinkle red pepper flakes", "Serve immediately"],
+      "category": "snack",
+      "difficulty": "easy",
+      "preparationTime": 10
+    }
+  ]
+}
