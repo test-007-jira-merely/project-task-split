@@ -1,0 +1,64 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Dish {
+  id          String   @id @default(uuid())
+  name        String
+  description String
+  imageUrl    String
+  category    String
+  difficulty  Int
+  prepTime    Int
+  cookTime    Int
+  calories    Int
+  protein     Int
+  fat         Int
+  carbs       Int
+  tags        String[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  ingredients Ingredient[]
+  instructions Instruction[]
+
+  @@index([category])
+  @@index([difficulty])
+}
+
+model Ingredient {
+  id         String   @id @default(uuid())
+  name       String
+  quantity   String
+  unit       String
+  substitutes String[]
+  dishId     String
+  dish       Dish     @relation(fields: [dishId], references: [id], onDelete: Cascade)
+
+  @@index([name])
+  @@index([dishId])
+}
+
+model Instruction {
+  id       String @id @default(uuid())
+  step     Int
+  content  String
+  dishId   String
+  dish     Dish   @relation(fields: [dishId], references: [id], onDelete: Cascade)
+
+  @@index([dishId])
+}
+
+model SubstitutionRule {
+  id          String   @id @default(uuid())
+  ingredient  String   @unique
+  substitutes Json
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([ingredient])
+}
