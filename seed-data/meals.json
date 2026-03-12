@@ -1,0 +1,1191 @@
+[
+  {
+    "name": "Classic Pancakes",
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "imageUrl": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445",
+    "ingredients": [
+      "1 1/2 cups all-purpose flour",
+      "3 1/2 tsp baking powder",
+      "1 tsp salt",
+      "1 tbsp white sugar",
+      "1 1/4 cups milk",
+      "1 egg",
+      "3 tbsp butter, melted"
+    ],
+    "instructions": [
+      "In a large bowl, sift together the flour, baking powder, salt and sugar",
+      "Make a well in the center and pour in the milk, egg and melted butter",
+      "Mix until smooth",
+      "Heat a lightly oiled griddle or frying pan over medium high heat",
+      "Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake",
+      "Brown on both sides and serve hot"
+    ]
+  },
+  {
+    "name": "Avocado Toast",
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 5,
+    "imageUrl": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d",
+    "ingredients": [
+      "2 slices whole grain bread",
+      "1 ripe avocado",
+      "1 tsp lemon juice",
+      "Salt and pepper to taste",
+      "Red pepper flakes (optional)",
+      "2 eggs (optional)"
+    ],
+    "instructions": [
+      "Toast the bread slices until golden brown",
+      "Mash the avocado in a bowl with lemon juice, salt, and pepper",
+      "Spread the avocado mixture evenly on the toasted bread",
+      "Sprinkle with red pepper flakes if desired",
+      "Top with a fried or poached egg if desired"
+    ]
+  },
+  {
+    "name": "Berry Smoothie Bowl",
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 10,
+    "imageUrl": "https://images.unsplash.com/photo-1590301157890-4810ed352733",
+    "ingredients": [
+      "1 cup frozen mixed berries",
+      "1 banana",
+      "1/2 cup Greek yogurt",
+      "1/4 cup milk",
+      "1 tbsp honey",
+      "Granola for topping",
+      "Fresh berries for topping",
+      "Chia seeds for topping"
+    ],
+    "instructions": [
+      "Add frozen berries, banana, yogurt, milk, and honey to a blender",
+      "Blend until smooth and thick",
+      "Pour into a bowl",
+      "Top with granola, fresh berries, and chia seeds",
+      "Serve immediately"
+    ]
+  },
+  {
+    "name": "Eggs Benedict",
+    "category": "breakfast",
+    "difficulty": "hard",
+    "prepTime": 30,
+    "imageUrl": "https://images.unsplash.com/photo-1608039755401-742074f0548d",
+    "ingredients": [
+      "4 eggs",
+      "2 English muffins, split",
+      "4 slices Canadian bacon",
+      "3 egg yolks",
+      "1 tbsp lemon juice",
+      "1/2 cup butter, melted",
+      "Pinch of cayenne pepper",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Prepare hollandaise sauce by whisking egg yolks and lemon juice in a double boiler",
+      "Slowly add melted butter while whisking constantly",
+      "Season with cayenne and salt, keep warm",
+      "Poach eggs in simmering water with vinegar",
+      "Toast English muffins and warm Canadian bacon",
+      "Place bacon on muffins, top with poached eggs",
+      "Drizzle hollandaise sauce over the top"
+    ]
+  },
+  {
+    "name": "French Toast",
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "imageUrl": "https://images.unsplash.com/photo-1484723091739-30a097e8f929",
+    "ingredients": [
+      "4 slices thick bread",
+      "2 eggs",
+      "1/2 cup milk",
+      "1 tsp vanilla extract",
+      "1/2 tsp cinnamon",
+      "Butter for cooking",
+      "Maple syrup for serving",
+      "Powdered sugar for serving"
+    ],
+    "instructions": [
+      "Whisk together eggs, milk, vanilla, and cinnamon in a shallow bowl",
+      "Heat butter in a skillet over medium heat",
+      "Dip bread slices in egg mixture, coating both sides",
+      "Cook until golden brown on both sides, about 3-4 minutes per side",
+      "Serve hot with maple syrup and powdered sugar"
+    ]
+  },
+  {
+    "name": "Veggie Omelette",
+    "category": "breakfast",
+    "difficulty": "medium",
+    "prepTime": 15,
+    "imageUrl": "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841",
+    "ingredients": [
+      "3 eggs",
+      "1/4 cup milk",
+      "1/2 bell pepper, diced",
+      "1/4 onion, diced",
+      "1/2 cup mushrooms, sliced",
+      "1/4 cup shredded cheese",
+      "Salt and pepper to taste",
+      "1 tbsp butter"
+    ],
+    "instructions": [
+      "Whisk eggs with milk, salt, and pepper",
+      "Melt butter in a non-stick pan over medium heat",
+      "Add vegetables and sauté until softened",
+      "Pour egg mixture over vegetables",
+      "Cook until edges set, then sprinkle cheese on one half",
+      "Fold omelette in half and cook until cheese melts",
+      "Slide onto plate and serve"
+    ]
+  },
+  {
+    "name": "Breakfast Burrito",
+    "category": "breakfast",
+    "difficulty": "medium",
+    "prepTime": 20,
+    "imageUrl": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f",
+    "ingredients": [
+      "2 large flour tortillas",
+      "4 eggs, scrambled",
+      "1/2 cup black beans",
+      "1/2 cup shredded cheese",
+      "1/4 cup salsa",
+      "1 avocado, sliced",
+      "2 tbsp sour cream",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Scramble eggs in a pan and season with salt and pepper",
+      "Warm tortillas in a dry skillet",
+      "Heat black beans in a small pot",
+      "Layer scrambled eggs, beans, cheese, and avocado on each tortilla",
+      "Top with salsa and sour cream",
+      "Fold sides in and roll up tightly",
+      "Optionally grill the burrito seam-side down for a crispy exterior"
+    ]
+  },
+  {
+    "name": "Overnight Oats",
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 5,
+    "imageUrl": "https://images.unsplash.com/photo-1517673132405-a56a62b18caf",
+    "ingredients": [
+      "1/2 cup rolled oats",
+      "1/2 cup milk",
+      "1/4 cup Greek yogurt",
+      "1 tbsp chia seeds",
+      "1 tbsp honey",
+      "1/2 tsp vanilla extract",
+      "Fresh fruit for topping",
+      "Nuts for topping"
+    ],
+    "instructions": [
+      "Combine oats, milk, yogurt, chia seeds, honey, and vanilla in a jar",
+      "Stir well to combine",
+      "Cover and refrigerate overnight or at least 4 hours",
+      "In the morning, stir and add more milk if desired",
+      "Top with fresh fruit and nuts",
+      "Enjoy cold"
+    ]
+  },
+  {
+    "name": "Grilled Chicken Caesar Salad",
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 25,
+    "imageUrl": "https://images.unsplash.com/photo-1546793665-c74683f339c1",
+    "ingredients": [
+      "2 chicken breasts",
+      "1 head romaine lettuce",
+      "1/2 cup Caesar dressing",
+      "1/2 cup croutons",
+      "1/4 cup Parmesan cheese, shaved",
+      "2 tbsp olive oil",
+      "Salt and pepper to taste",
+      "Lemon wedges"
+    ],
+    "instructions": [
+      "Season chicken breasts with salt, pepper, and olive oil",
+      "Grill chicken over medium-high heat for 6-7 minutes per side",
+      "Let chicken rest for 5 minutes, then slice",
+      "Wash and chop romaine lettuce",
+      "Toss lettuce with Caesar dressing",
+      "Top with sliced chicken, croutons, and Parmesan",
+      "Serve with lemon wedges"
+    ]
+  },
+  {
+    "name": "Turkey Club Sandwich",
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 10,
+    "imageUrl": "https://images.unsplash.com/photo-1619894991209-e2c4f3e6d949",
+    "ingredients": [
+      "3 slices bread, toasted",
+      "4 slices turkey breast",
+      "3 slices bacon, cooked",
+      "2 slices tomato",
+      "2 lettuce leaves",
+      "2 tbsp mayonnaise",
+      "1 slice cheese",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Toast bread slices until golden",
+      "Spread mayonnaise on all three slices",
+      "On first slice, layer turkey and cheese",
+      "Add second slice of bread",
+      "Layer bacon, lettuce, and tomato",
+      "Season with salt and pepper",
+      "Top with third slice of bread",
+      "Cut diagonally and secure with toothpicks"
+    ]
+  },
+  {
+    "name": "Caprese Sandwich",
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 10,
+    "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af",
+    "ingredients": [
+      "1 ciabatta roll",
+      "4 oz fresh mozzarella, sliced",
+      "2 tomatoes, sliced",
+      "Fresh basil leaves",
+      "2 tbsp balsamic glaze",
+      "1 tbsp olive oil",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Slice ciabatta roll in half horizontally",
+      "Drizzle both sides with olive oil",
+      "Layer mozzarella slices on bottom half",
+      "Add tomato slices",
+      "Season with salt and pepper",
+      "Add fresh basil leaves",
+      "Drizzle with balsamic glaze",
+      "Top with other half of roll and serve"
+    ]
+  },
+  {
+    "name": "Asian Chicken Lettuce Wraps",
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 20,
+    "imageUrl": "https://images.unsplash.com/photo-1604908815346-4b7e50d6d4c6",
+    "ingredients": [
+      "1 lb ground chicken",
+      "1 tbsp sesame oil",
+      "1/4 cup hoisin sauce",
+      "2 tbsp soy sauce",
+      "1 tbsp rice vinegar",
+      "2 cloves garlic, minced",
+      "1 tsp ginger, minced",
+      "1/2 cup water chestnuts, diced",
+      "2 green onions, sliced",
+      "1 head butter lettuce"
+    ],
+    "instructions": [
+      "Heat sesame oil in a large skillet over medium-high heat",
+      "Add ground chicken and cook until browned",
+      "Add garlic and ginger, cook for 1 minute",
+      "Stir in hoisin sauce, soy sauce, and rice vinegar",
+      "Add water chestnuts and cook for 2 minutes",
+      "Remove from heat and stir in green onions",
+      "Separate lettuce leaves and wash",
+      "Spoon chicken mixture into lettuce cups and serve"
+    ]
+  },
+  {
+    "name": "Quinoa Buddha Bowl",
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 30,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c",
+    "ingredients": [
+      "1 cup quinoa",
+      "2 cups vegetable broth",
+      "1 sweet potato, cubed",
+      "1 cup chickpeas",
+      "2 cups kale",
+      "1 avocado",
+      "1/4 cup tahini",
+      "2 tbsp lemon juice",
+      "1 tbsp olive oil",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Cook quinoa in vegetable broth according to package directions",
+      "Toss sweet potato cubes with olive oil, salt, and pepper",
+      "Roast at 400F for 25 minutes",
+      "Drain and rinse chickpeas, season and roast for 20 minutes",
+      "Massage kale with a bit of olive oil",
+      "Make dressing by whisking tahini with lemon juice and water",
+      "Assemble bowls with quinoa, roasted vegetables, chickpeas, and kale",
+      "Top with sliced avocado and drizzle with tahini dressing"
+    ]
+  },
+  {
+    "name": "Tomato Basil Soup",
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 30,
+    "imageUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd",
+    "ingredients": [
+      "2 lbs tomatoes, chopped",
+      "1 onion, diced",
+      "3 cloves garlic, minced",
+      "2 cups vegetable broth",
+      "1/2 cup heavy cream",
+      "1/4 cup fresh basil",
+      "2 tbsp olive oil",
+      "Salt and pepper to taste",
+      "Croutons for serving"
+    ],
+    "instructions": [
+      "Heat olive oil in a large pot over medium heat",
+      "Add onion and cook until softened",
+      "Add garlic and cook for 1 minute",
+      "Add tomatoes and broth, bring to a boil",
+      "Reduce heat and simmer for 20 minutes",
+      "Add basil and blend until smooth using an immersion blender",
+      "Stir in heavy cream and season with salt and pepper",
+      "Serve hot with croutons"
+    ]
+  },
+  {
+    "name": "Greek Salad",
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "imageUrl": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+    "ingredients": [
+      "4 cups mixed greens",
+      "1 cucumber, diced",
+      "2 tomatoes, chopped",
+      "1/2 red onion, sliced",
+      "1/2 cup Kalamata olives",
+      "1/2 cup feta cheese, crumbled",
+      "1/4 cup olive oil",
+      "2 tbsp red wine vinegar",
+      "1 tsp oregano",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Combine greens, cucumber, tomatoes, and onion in a large bowl",
+      "Add Kalamata olives and feta cheese",
+      "Whisk together olive oil, red wine vinegar, oregano, salt, and pepper",
+      "Drizzle dressing over salad",
+      "Toss gently to combine",
+      "Serve immediately"
+    ]
+  },
+  {
+    "name": "Beef Tacos",
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 20,
+    "imageUrl": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47",
+    "ingredients": [
+      "1 lb ground beef",
+      "1 packet taco seasoning",
+      "8 taco shells",
+      "1 cup shredded lettuce",
+      "1 cup shredded cheese",
+      "1 tomato, diced",
+      "1/2 cup sour cream",
+      "1/2 cup salsa",
+      "1/4 cup water"
+    ],
+    "instructions": [
+      "Brown ground beef in a skillet over medium-high heat",
+      "Drain excess fat",
+      "Add taco seasoning and water, stir to combine",
+      "Simmer for 5 minutes until thickened",
+      "Warm taco shells according to package directions",
+      "Fill shells with seasoned beef",
+      "Top with lettuce, cheese, tomato, sour cream, and salsa",
+      "Serve immediately"
+    ]
+  },
+  {
+    "name": "Grilled Salmon with Asparagus",
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 25,
+    "imageUrl": "https://images.unsplash.com/photo-1467003909585-2f8a72700288",
+    "ingredients": [
+      "4 salmon fillets",
+      "1 lb asparagus",
+      "3 tbsp olive oil",
+      "2 cloves garlic, minced",
+      "1 lemon, sliced",
+      "2 tbsp fresh dill",
+      "Salt and pepper to taste",
+      "Lemon wedges for serving"
+    ],
+    "instructions": [
+      "Preheat grill to medium-high heat",
+      "Brush salmon with olive oil and season with salt and pepper",
+      "Trim asparagus and toss with olive oil, garlic, salt, and pepper",
+      "Place salmon skin-side down on grill",
+      "Add asparagus to grill",
+      "Grill salmon for 4-5 minutes per side",
+      "Grill asparagus until tender, about 5-7 minutes",
+      "Garnish with fresh dill and lemon slices",
+      "Serve with lemon wedges"
+    ]
+  },
+  {
+    "name": "Spaghetti Carbonara",
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 20,
+    "imageUrl": "https://images.unsplash.com/photo-1612874742237-6526221588e3",
+    "ingredients": [
+      "1 lb spaghetti",
+      "8 oz pancetta, diced",
+      "4 eggs",
+      "1 cup Parmesan cheese, grated",
+      "2 cloves garlic, minced",
+      "Salt and black pepper to taste",
+      "Fresh parsley for garnish"
+    ],
+    "instructions": [
+      "Cook spaghetti according to package directions, reserve 1 cup pasta water",
+      "While pasta cooks, crisp pancetta in a large skillet",
+      "Add garlic and cook for 1 minute",
+      "In a bowl, whisk together eggs and Parmesan cheese",
+      "Drain pasta and add to skillet with pancetta",
+      "Remove from heat and quickly stir in egg mixture",
+      "Add pasta water as needed to create a creamy sauce",
+      "Season with salt and lots of black pepper",
+      "Garnish with parsley and extra Parmesan"
+    ]
+  },
+  {
+    "name": "Chicken Stir Fry",
+    "category": "dinner",
+    "difficulty": "easy",
+    "prepTime": 25,
+    "imageUrl": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143",
+    "ingredients": [
+      "1 lb chicken breast, sliced",
+      "2 cups mixed vegetables (broccoli, bell peppers, carrots)",
+      "3 tbsp soy sauce",
+      "1 tbsp oyster sauce",
+      "1 tbsp cornstarch",
+      "2 cloves garlic, minced",
+      "1 tsp ginger, minced",
+      "2 tbsp vegetable oil",
+      "Sesame seeds for garnish",
+      "Cooked rice for serving"
+    ],
+    "instructions": [
+      "Toss chicken with cornstarch",
+      "Heat 1 tbsp oil in a wok over high heat",
+      "Stir-fry chicken until cooked through, set aside",
+      "Add remaining oil and stir-fry vegetables until tender-crisp",
+      "Add garlic and ginger, cook for 30 seconds",
+      "Return chicken to wok",
+      "Add soy sauce and oyster sauce, toss to combine",
+      "Garnish with sesame seeds",
+      "Serve over rice"
+    ]
+  },
+  {
+    "name": "Beef Stroganoff",
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 35,
+    "imageUrl": "https://images.unsplash.com/photo-1595908129746-8d3d2f732e3d",
+    "ingredients": [
+      "1 lb beef sirloin, sliced",
+      "8 oz mushrooms, sliced",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "2 cups beef broth",
+      "1 cup sour cream",
+      "2 tbsp flour",
+      "2 tbsp butter",
+      "1 tbsp Dijon mustard",
+      "Salt and pepper to taste",
+      "12 oz egg noodles",
+      "Fresh parsley for garnish"
+    ],
+    "instructions": [
+      "Cook egg noodles according to package directions",
+      "Season beef with salt and pepper, sear in butter until browned",
+      "Remove beef and set aside",
+      "Sauté onions and mushrooms in the same pan",
+      "Add garlic and cook for 1 minute",
+      "Sprinkle flour over vegetables and stir",
+      "Gradually add beef broth, stirring constantly",
+      "Return beef to pan and simmer for 10 minutes",
+      "Remove from heat and stir in sour cream and mustard",
+      "Serve over egg noodles and garnish with parsley"
+    ]
+  },
+  {
+    "name": "Vegetarian Lasagna",
+    "category": "dinner",
+    "difficulty": "hard",
+    "prepTime": 60,
+    "imageUrl": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3",
+    "ingredients": [
+      "12 lasagna noodles",
+      "2 cups ricotta cheese",
+      "2 cups mozzarella cheese, shredded",
+      "1 cup Parmesan cheese, grated",
+      "1 egg",
+      "4 cups marinara sauce",
+      "2 cups spinach",
+      "1 zucchini, sliced",
+      "1 bell pepper, diced",
+      "2 cloves garlic, minced",
+      "2 tbsp olive oil",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Preheat oven to 375F",
+      "Cook lasagna noodles according to package directions",
+      "Sauté vegetables with garlic in olive oil until softened",
+      "Mix ricotta, egg, half the mozzarella, and half the Parmesan",
+      "Spread 1 cup marinara in bottom of 9x13 baking dish",
+      "Layer noodles, ricotta mixture, vegetables, and marinara",
+      "Repeat layers twice more",
+      "Top with remaining mozzarella and Parmesan",
+      "Cover with foil and bake for 30 minutes",
+      "Remove foil and bake 15 more minutes until golden",
+      "Let rest 10 minutes before serving"
+    ]
+  },
+  {
+    "name": "Honey Garlic Pork Chops",
+    "category": "dinner",
+    "difficulty": "easy",
+    "prepTime": 20,
+    "imageUrl": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba",
+    "ingredients": [
+      "4 pork chops",
+      "1/4 cup honey",
+      "3 tbsp soy sauce",
+      "4 cloves garlic, minced",
+      "1 tbsp olive oil",
+      "1 tsp ginger, minced",
+      "Salt and pepper to taste",
+      "Green onions for garnish"
+    ],
+    "instructions": [
+      "Season pork chops with salt and pepper",
+      "Heat olive oil in a large skillet over medium-high heat",
+      "Sear pork chops for 4-5 minutes per side until golden",
+      "Remove pork chops and set aside",
+      "In same skillet, add garlic and ginger, cook for 30 seconds",
+      "Add honey and soy sauce, stir to combine",
+      "Return pork chops to skillet and coat with sauce",
+      "Simmer for 2-3 minutes until sauce thickens",
+      "Garnish with green onions and serve"
+    ]
+  },
+  {
+    "name": "Shrimp Scampi",
+    "category": "dinner",
+    "difficulty": "easy",
+    "prepTime": 20,
+    "imageUrl": "https://images.unsplash.com/photo-1633504581786-316c8002b1b9",
+    "ingredients": [
+      "1 lb large shrimp, peeled and deveined",
+      "8 oz linguine",
+      "4 cloves garlic, minced",
+      "1/2 cup white wine",
+      "1/4 cup lemon juice",
+      "4 tbsp butter",
+      "2 tbsp olive oil",
+      "1/4 cup fresh parsley, chopped",
+      "Red pepper flakes",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Cook linguine according to package directions",
+      "Heat olive oil and 2 tbsp butter in a large skillet",
+      "Add shrimp and cook until pink, about 2 minutes per side",
+      "Remove shrimp and set aside",
+      "Add garlic to skillet and cook for 1 minute",
+      "Add wine and lemon juice, simmer for 3 minutes",
+      "Stir in remaining butter until melted",
+      "Return shrimp to skillet and toss with sauce",
+      "Add drained pasta and toss to combine",
+      "Garnish with parsley and red pepper flakes"
+    ]
+  },
+  {
+    "name": "BBQ Ribs",
+    "category": "dinner",
+    "difficulty": "hard",
+    "prepTime": 180,
+    "imageUrl": "https://images.unsplash.com/photo-1544025162-d76694265947",
+    "ingredients": [
+      "2 racks baby back ribs",
+      "2 cups BBQ sauce",
+      "2 tbsp brown sugar",
+      "1 tbsp paprika",
+      "1 tbsp garlic powder",
+      "1 tbsp onion powder",
+      "1 tsp cayenne pepper",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Remove membrane from back of ribs",
+      "Mix brown sugar, paprika, garlic powder, onion powder, cayenne, salt, and pepper",
+      "Rub spice mixture all over ribs",
+      "Wrap ribs in foil and refrigerate for 2 hours",
+      "Preheat oven to 275F",
+      "Place wrapped ribs on baking sheet and bake for 2.5 hours",
+      "Remove from oven and unwrap",
+      "Brush ribs generously with BBQ sauce",
+      "Broil for 5-7 minutes until sauce caramelizes",
+      "Let rest for 5 minutes before cutting"
+    ]
+  },
+  {
+    "name": "Chicken Parmesan",
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 40,
+    "imageUrl": "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8",
+    "ingredients": [
+      "4 chicken breasts",
+      "2 cups marinara sauce",
+      "1 cup mozzarella cheese, shredded",
+      "1/2 cup Parmesan cheese, grated",
+      "1 cup breadcrumbs",
+      "2 eggs, beaten",
+      "1/2 cup flour",
+      "2 tbsp olive oil",
+      "Fresh basil for garnish",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Preheat oven to 400F",
+      "Pound chicken breasts to even thickness",
+      "Season with salt and pepper",
+      "Dredge in flour, dip in egg, then coat with breadcrumbs",
+      "Heat olive oil in a large oven-safe skillet",
+      "Brown chicken on both sides, about 3 minutes per side",
+      "Top each breast with marinara sauce and cheeses",
+      "Transfer skillet to oven and bake for 20 minutes",
+      "Garnish with fresh basil and serve"
+    ]
+  },
+  {
+    "name": "Hummus and Veggie Plate",
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 10,
+    "imageUrl": "https://images.unsplash.com/photo-1621516764626-c7b5f3926c5e",
+    "ingredients": [
+      "1 cup hummus",
+      "1 cucumber, sliced",
+      "2 carrots, cut into sticks",
+      "1 bell pepper, sliced",
+      "1 cup cherry tomatoes",
+      "1/4 cup olives",
+      "Pita bread, cut into triangles",
+      "Olive oil for drizzling",
+      "Paprika for garnish"
+    ],
+    "instructions": [
+      "Spread hummus on a plate",
+      "Drizzle with olive oil and sprinkle with paprika",
+      "Arrange vegetables around the hummus",
+      "Toast pita triangles if desired",
+      "Serve immediately"
+    ]
+  },
+  {
+    "name": "Caprese Skewers",
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 10,
+    "imageUrl": "https://images.unsplash.com/photo-1608897013039-887f21d8c804",
+    "ingredients": [
+      "20 cherry tomatoes",
+      "20 small mozzarella balls",
+      "20 fresh basil leaves",
+      "2 tbsp balsamic glaze",
+      "1 tbsp olive oil",
+      "Salt and pepper to taste",
+      "20 small skewers"
+    ],
+    "instructions": [
+      "Thread one tomato, one basil leaf, and one mozzarella ball onto each skewer",
+      "Arrange skewers on a serving plate",
+      "Drizzle with olive oil and balsamic glaze",
+      "Season with salt and pepper",
+      "Serve immediately or refrigerate until ready to serve"
+    ]
+  },
+  {
+    "name": "Guacamole with Chips",
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 10,
+    "imageUrl": "https://images.unsplash.com/photo-1621447504864-d8686e12698c",
+    "ingredients": [
+      "3 ripe avocados",
+      "1 lime, juiced",
+      "1 tomato, diced",
+      "1/4 cup red onion, minced",
+      "2 tbsp cilantro, chopped",
+      "1 jalapeno, minced",
+      "1/2 tsp salt",
+      "1/4 tsp cumin",
+      "Tortilla chips for serving"
+    ],
+    "instructions": [
+      "Mash avocados in a bowl with lime juice",
+      "Add tomato, onion, cilantro, and jalapeno",
+      "Season with salt and cumin",
+      "Mix gently to combine",
+      "Taste and adjust seasoning",
+      "Serve immediately with tortilla chips"
+    ]
+  },
+  {
+    "name": "Spinach Artichoke Dip",
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 30,
+    "imageUrl": "https://images.unsplash.com/photo-1617343267146-44e2ce3dd0e6",
+    "ingredients": [
+      "2 cups spinach, chopped",
+      "1 can artichoke hearts, chopped",
+      "8 oz cream cheese, softened",
+      "1/2 cup sour cream",
+      "1/2 cup mayonnaise",
+      "1 cup mozzarella cheese, shredded",
+      "1/2 cup Parmesan cheese, grated",
+      "2 cloves garlic, minced",
+      "Salt and pepper to taste",
+      "Crackers or bread for serving"
+    ],
+    "instructions": [
+      "Preheat oven to 350F",
+      "Mix cream cheese, sour cream, and mayonnaise until smooth",
+      "Stir in spinach, artichokes, garlic, and half of both cheeses",
+      "Season with salt and pepper",
+      "Transfer to a baking dish",
+      "Top with remaining cheese",
+      "Bake for 20-25 minutes until bubbly and golden",
+      "Serve hot with crackers or bread"
+    ]
+  },
+  {
+    "name": "Buffalo Chicken Wings",
+    "category": "snack",
+    "difficulty": "medium",
+    "prepTime": 45,
+    "imageUrl": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7",
+    "ingredients": [
+      "2 lbs chicken wings",
+      "1/2 cup hot sauce",
+      "1/4 cup butter, melted",
+      "1 tsp garlic powder",
+      "1/2 tsp paprika",
+      "Salt and pepper to taste",
+      "Ranch or blue cheese dressing",
+      "Celery sticks for serving"
+    ],
+    "instructions": [
+      "Preheat oven to 400F",
+      "Pat wings dry and season with salt, pepper, garlic powder, and paprika",
+      "Arrange wings on a baking sheet",
+      "Bake for 40-45 minutes, flipping halfway",
+      "Mix hot sauce with melted butter",
+      "Toss baked wings in sauce",
+      "Serve with ranch or blue cheese dressing and celery sticks"
+    ]
+  },
+  {
+    "name": "Cheese Quesadilla",
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 10,
+    "imageUrl": "https://images.unsplash.com/photo-1618040996337-56904b7850b9",
+    "ingredients": [
+      "2 large flour tortillas",
+      "1 cup shredded cheese (cheddar or Mexican blend)",
+      "1/4 cup bell peppers, diced",
+      "1/4 cup onions, diced",
+      "1 tbsp butter",
+      "Sour cream for serving",
+      "Salsa for serving",
+      "Guacamole for serving"
+    ],
+    "instructions": [
+      "Heat butter in a large skillet over medium heat",
+      "Place one tortilla in the skillet",
+      "Sprinkle cheese, peppers, and onions over half the tortilla",
+      "Fold tortilla in half",
+      "Cook for 2-3 minutes until golden and crispy",
+      "Flip and cook other side for 2 minutes",
+      "Cut into triangles",
+      "Serve with sour cream, salsa, and guacamole"
+    ]
+  },
+  {
+    "name": "Bruschetta",
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "imageUrl": "https://images.unsplash.com/photo-1506280754576-f6fa8a873550",
+    "ingredients": [
+      "1 baguette, sliced",
+      "4 tomatoes, diced",
+      "1/4 cup fresh basil, chopped",
+      "2 cloves garlic, minced",
+      "3 tbsp olive oil",
+      "1 tbsp balsamic vinegar",
+      "Salt and pepper to taste",
+      "Parmesan cheese for topping"
+    ],
+    "instructions": [
+      "Preheat oven to 400F",
+      "Arrange baguette slices on a baking sheet",
+      "Brush with olive oil and toast for 5-7 minutes",
+      "Mix tomatoes, basil, garlic, remaining olive oil, and balsamic vinegar",
+      "Season with salt and pepper",
+      "Top toasted bread with tomato mixture",
+      "Sprinkle with Parmesan cheese",
+      "Serve immediately"
+    ]
+  },
+  {
+    "name": "Stuffed Mushrooms",
+    "category": "snack",
+    "difficulty": "medium",
+    "prepTime": 30,
+    "imageUrl": "https://images.unsplash.com/photo-1608808404044-17f732a22849",
+    "ingredients": [
+      "16 large mushrooms",
+      "4 oz cream cheese, softened",
+      "1/4 cup Parmesan cheese, grated",
+      "1/4 cup breadcrumbs",
+      "2 cloves garlic, minced",
+      "2 tbsp fresh parsley, chopped",
+      "2 tbsp olive oil",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Preheat oven to 375F",
+      "Remove stems from mushrooms and chop stems finely",
+      "Sauté chopped stems with garlic in olive oil",
+      "Mix sautéed stems with cream cheese, Parmesan, and parsley",
+      "Season with salt and pepper",
+      "Fill mushroom caps with mixture",
+      "Top with breadcrumbs",
+      "Bake for 20 minutes until golden",
+      "Serve hot"
+    ]
+  },
+  {
+    "name": "Deviled Eggs",
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 20,
+    "imageUrl": "https://images.unsplash.com/photo-1586444248902-2f64eddc13df",
+    "ingredients": [
+      "6 hard-boiled eggs",
+      "1/4 cup mayonnaise",
+      "1 tsp Dijon mustard",
+      "1 tsp white vinegar",
+      "Salt and pepper to taste",
+      "Paprika for garnish",
+      "Fresh chives for garnish"
+    ],
+    "instructions": [
+      "Peel hard-boiled eggs and cut in half lengthwise",
+      "Remove yolks and place in a bowl",
+      "Mash yolks with a fork",
+      "Add mayonnaise, mustard, and vinegar",
+      "Mix until smooth",
+      "Season with salt and pepper",
+      "Pipe or spoon mixture back into egg whites",
+      "Garnish with paprika and chives",
+      "Refrigerate until serving"
+    ]
+  },
+  {
+    "name": "Nachos Supreme",
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 20,
+    "imageUrl": "https://images.unsplash.com/photo-1582169296194-e4d644c48063",
+    "ingredients": [
+      "1 bag tortilla chips",
+      "2 cups shredded cheese",
+      "1 cup black beans",
+      "1/2 cup corn",
+      "1 jalapeno, sliced",
+      "1/4 cup sour cream",
+      "1/4 cup salsa",
+      "1/4 cup guacamole",
+      "2 tbsp cilantro, chopped",
+      "1 lime, cut into wedges"
+    ],
+    "instructions": [
+      "Preheat oven to 375F",
+      "Spread chips on a large baking sheet",
+      "Sprinkle cheese evenly over chips",
+      "Add black beans, corn, and jalapeno slices",
+      "Bake for 10-12 minutes until cheese melts",
+      "Remove from oven",
+      "Top with dollops of sour cream, salsa, and guacamole",
+      "Garnish with cilantro",
+      "Serve with lime wedges"
+    ]
+  },
+  {
+    "name": "Chicken Tenders",
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 25,
+    "imageUrl": "https://images.unsplash.com/photo-1562967916-eb82221dfb38",
+    "ingredients": [
+      "1 lb chicken tenders",
+      "1 cup flour",
+      "2 eggs, beaten",
+      "1 1/2 cups breadcrumbs",
+      "1 tsp garlic powder",
+      "1 tsp paprika",
+      "Salt and pepper to taste",
+      "Vegetable oil for frying",
+      "Honey mustard for serving",
+      "BBQ sauce for serving"
+    ],
+    "instructions": [
+      "Season chicken with salt, pepper, garlic powder, and paprika",
+      "Set up three bowls: flour, beaten eggs, and breadcrumbs",
+      "Dredge each tender in flour, dip in egg, then coat with breadcrumbs",
+      "Heat oil in a large skillet over medium-high heat",
+      "Fry tenders for 3-4 minutes per side until golden",
+      "Drain on paper towels",
+      "Serve hot with honey mustard and BBQ sauce"
+    ]
+  },
+  {
+    "name": "Mozzarella Sticks",
+    "category": "snack",
+    "difficulty": "medium",
+    "prepTime": 30,
+    "imageUrl": "https://images.unsplash.com/photo-1531749668029-2db88e4276c7",
+    "ingredients": [
+      "12 mozzarella string cheese sticks",
+      "1 cup flour",
+      "2 eggs, beaten",
+      "1 1/2 cups breadcrumbs",
+      "1 tsp Italian seasoning",
+      "1/2 tsp garlic powder",
+      "Vegetable oil for frying",
+      "1 cup marinara sauce for serving"
+    ],
+    "instructions": [
+      "Freeze cheese sticks for 30 minutes",
+      "Mix breadcrumbs with Italian seasoning and garlic powder",
+      "Dredge frozen cheese in flour, dip in egg, coat with breadcrumbs",
+      "Repeat egg and breadcrumb coating for double layer",
+      "Freeze coated sticks for 15 minutes",
+      "Heat oil to 350F",
+      "Fry sticks for 2-3 minutes until golden",
+      "Drain on paper towels",
+      "Serve immediately with marinara sauce"
+    ]
+  },
+  {
+    "name": "Pigs in a Blanket",
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 20,
+    "imageUrl": "https://images.unsplash.com/photo-1612392166886-ee6a748c87e5",
+    "ingredients": [
+      "1 package crescent roll dough",
+      "24 mini hot dogs or cocktail sausages",
+      "1 egg, beaten",
+      "Sesame seeds (optional)",
+      "Mustard for serving",
+      "Ketchup for serving"
+    ],
+    "instructions": [
+      "Preheat oven to 375F",
+      "Unroll crescent dough and separate into triangles",
+      "Cut each triangle into 3 smaller triangles",
+      "Wrap each hot dog with a dough triangle",
+      "Place seam-side down on baking sheet",
+      "Brush with beaten egg",
+      "Sprinkle with sesame seeds if desired",
+      "Bake for 12-15 minutes until golden",
+      "Serve warm with mustard and ketchup"
+    ]
+  },
+  {
+    "name": "Fruit Salad",
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "imageUrl": "https://images.unsplash.com/photo-1564093497595-593b96d80180",
+    "ingredients": [
+      "2 cups strawberries, sliced",
+      "2 cups pineapple chunks",
+      "2 cups grapes",
+      "2 cups blueberries",
+      "1 cup mandarin oranges",
+      "2 kiwis, sliced",
+      "2 tbsp honey",
+      "1 lime, juiced",
+      "Fresh mint for garnish"
+    ],
+    "instructions": [
+      "Combine all fruits in a large bowl",
+      "Mix honey and lime juice in a small bowl",
+      "Drizzle honey-lime mixture over fruit",
+      "Gently toss to combine",
+      "Refrigerate for at least 30 minutes",
+      "Garnish with fresh mint before serving",
+      "Serve chilled"
+    ]
+  },
+  {
+    "name": "Energy Balls",
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 15,
+    "imageUrl": "https://images.unsplash.com/photo-1593096010414-e2033c7a6fce",
+    "ingredients": [
+      "1 cup rolled oats",
+      "1/2 cup peanut butter",
+      "1/3 cup honey",
+      "1/2 cup chocolate chips",
+      "1/4 cup ground flaxseed",
+      "1 tsp vanilla extract",
+      "Pinch of salt"
+    ],
+    "instructions": [
+      "Mix all ingredients in a bowl until well combined",
+      "Refrigerate for 30 minutes",
+      "Roll mixture into 1-inch balls",
+      "Place on a baking sheet lined with parchment paper",
+      "Refrigerate for another hour until firm",
+      "Store in an airtight container in the refrigerator",
+      "Enjoy as needed for a quick energy boost"
+    ]
+  },
+  {
+    "name": "Popcorn Three Ways",
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 10,
+    "imageUrl": "https://images.unsplash.com/photo-1578849278619-e73505e9610f",
+    "ingredients": [
+      "1/2 cup popcorn kernels",
+      "3 tbsp coconut oil",
+      "For butter: 3 tbsp melted butter, salt",
+      "For parmesan: 2 tbsp butter, 1/4 cup Parmesan, garlic powder",
+      "For caramel: 1/2 cup brown sugar, 1/4 cup butter, 2 tbsp corn syrup",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "Heat coconut oil in a large pot over medium heat",
+      "Add popcorn kernels and cover",
+      "Shake pot occasionally until popping slows",
+      "For butter: toss with melted butter and salt",
+      "For parmesan: toss with butter, Parmesan, and garlic powder",
+      "For caramel: boil sugar, butter, and syrup for 2 minutes, then pour over popcorn",
+      "Serve immediately or store in airtight container"
+    ]
+  },
+  {
+    "name": "Chocolate Chip Cookies",
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 25,
+    "imageUrl": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e",
+    "ingredients": [
+      "2 1/4 cups all-purpose flour",
+      "1 tsp baking soda",
+      "1 tsp salt",
+      "1 cup butter, softened",
+      "3/4 cup granulated sugar",
+      "3/4 cup brown sugar",
+      "2 eggs",
+      "2 tsp vanilla extract",
+      "2 cups chocolate chips"
+    ],
+    "instructions": [
+      "Preheat oven to 375F",
+      "Mix flour, baking soda, and salt in a bowl",
+      "Cream butter and both sugars in another bowl",
+      "Beat in eggs and vanilla",
+      "Gradually stir in flour mixture",
+      "Fold in chocolate chips",
+      "Drop rounded tablespoons onto baking sheets",
+      "Bake 9-11 minutes until golden brown",
+      "Cool on baking sheet for 2 minutes",
+      "Transfer to wire rack to cool completely"
+    ]
+  },
+  {
+    "name": "Protein Smoothie",
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 5,
+    "imageUrl": "https://images.unsplash.com/photo-1610970881699-44a5587cabec",
+    "ingredients": [
+      "1 banana",
+      "1 cup spinach",
+      "1 scoop protein powder",
+      "1 cup almond milk",
+      "1 tbsp peanut butter",
+      "1/2 cup ice",
+      "1 tsp honey (optional)"
+    ],
+    "instructions": [
+      "Add all ingredients to a blender",
+      "Blend on high until smooth",
+      "Taste and adjust sweetness with honey if needed",
+      "Pour into a glass",
+      "Serve immediately"
+    ]
+  },
+  {
+    "name": "Trail Mix",
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 5,
+    "imageUrl": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32",
+    "ingredients": [
+      "1 cup almonds",
+      "1 cup cashews",
+      "1 cup dried cranberries",
+      "1 cup raisins",
+      "1/2 cup chocolate chips",
+      "1/2 cup pumpkin seeds",
+      "1/2 cup coconut flakes"
+    ],
+    "instructions": [
+      "Combine all ingredients in a large bowl",
+      "Mix well to distribute evenly",
+      "Store in an airtight container",
+      "Portion into small bags for grab-and-go snacks",
+      "Keeps for up to 2 weeks at room temperature"
+    ]
+  }
+]
