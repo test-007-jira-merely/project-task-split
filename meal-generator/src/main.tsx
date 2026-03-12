@@ -1,10 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './styles/index.css';
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <div className="min-h-screen">
+      <h1 className="text-4xl font-bold text-center py-8">MealGen - Loading...</h1>
+    </div>
+  </React.StrictMode>
+);
