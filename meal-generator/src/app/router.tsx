@@ -3,12 +3,12 @@ import { AppLayout } from '@/components/layout/AppLayout';
 import { ProtectedRoute } from '@/components/auth/ProtectedRoute';
 import { Login } from '@/pages/auth/Login';
 import { Register } from '@/pages/auth/Register';
+import { Home } from '@/pages/home/Home';
+import { Ingredients } from '@/pages/ingredients/Ingredients';
+import { Favorites } from '@/pages/favorites/Favorites';
+import { History } from '@/pages/history/History';
 
-const HomePage = () => <div>Home Page (Placeholder)</div>;
-const IngredientsPage = () => <div>Ingredients Page (Placeholder)</div>;
-const FavoritesPage = () => <div>Favorites Page (Placeholder)</div>;
-const HistoryPage = () => <div>History Page (Placeholder)</div>;
-const AdminPage = () => <div>Admin Page (Placeholder)</div>;
+const AdminPage = () => <div>Admin Page (Placeholder for next subtask)</div>;
 
 export const AppRouter = () => {
   return (
@@ -17,18 +17,18 @@ export const AppRouter = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 
-        <Route path="/" element={<AppLayout><HomePage /></AppLayout>} />
-        <Route path="/ingredients" element={<AppLayout><IngredientsPage /></AppLayout>} />
+        <Route path="/" element={<AppLayout><Home /></AppLayout>} />
+        <Route path="/ingredients" element={<AppLayout><Ingredients /></AppLayout>} />
 
         <Route path="/favorites" element={
           <ProtectedRoute>
-            <AppLayout><FavoritesPage /></AppLayout>
+            <AppLayout><Favorites /></AppLayout>
           </ProtectedRoute>
         } />
 
         <Route path="/history" element={
           <ProtectedRoute>
-            <AppLayout><HistoryPage /></AppLayout>
+            <AppLayout><History /></AppLayout>
           </ProtectedRoute>
         } />
 
