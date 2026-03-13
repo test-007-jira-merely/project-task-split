@@ -1,15 +1,11 @@
+import { RouterProvider } from 'react-router-dom';
+import { router } from './app/router';
 import { useAuth } from './hooks/useAuth';
 
 function App() {
   useAuth(); // Initialize auth listener
 
-  return (
-    <div className="min-h-screen">
-      <h1 className="text-4xl font-bold text-center py-20">
-        MealGen - Foundation Ready
-      </h1>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
