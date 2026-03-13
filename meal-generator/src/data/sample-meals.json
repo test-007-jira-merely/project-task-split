@@ -1,0 +1,295 @@
+[
+  {
+    "id": "1",
+    "name": "Classic Pancakes",
+    "imageUrl": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800",
+    "description": "Fluffy, golden pancakes perfect for a weekend breakfast. Light and airy with a hint of vanilla.",
+    "ingredients": ["flour", "eggs", "milk", "butter", "sugar", "baking powder", "vanilla extract", "salt"],
+    "instructions": [
+      "Mix dry ingredients in a large bowl",
+      "Whisk wet ingredients in a separate bowl",
+      "Combine wet and dry ingredients until just mixed",
+      "Heat a griddle over medium heat and grease lightly",
+      "Pour 1/4 cup batter for each pancake",
+      "Cook until bubbles form on surface, then flip",
+      "Cook until golden brown on both sides",
+      "Serve hot with syrup and butter"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "id": "2",
+    "name": "Avocado Toast",
+    "imageUrl": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=800",
+    "description": "Simple yet delicious avocado toast with a perfect balance of flavors. A healthy breakfast option.",
+    "ingredients": ["bread", "avocado", "lemon juice", "salt", "pepper", "red pepper flakes", "olive oil"],
+    "instructions": [
+      "Toast bread slices until golden brown",
+      "Mash avocado in a bowl with lemon juice",
+      "Season with salt and pepper to taste",
+      "Spread avocado mixture on toasted bread",
+      "Drizzle with olive oil",
+      "Sprinkle red pepper flakes on top",
+      "Serve immediately"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 10
+  },
+  {
+    "id": "3",
+    "name": "Caesar Salad",
+    "imageUrl": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=800",
+    "description": "Classic Caesar salad with crispy romaine, parmesan, and homemade dressing.",
+    "ingredients": ["romaine lettuce", "parmesan cheese", "croutons", "garlic", "anchovies", "lemon juice", "olive oil", "egg yolk", "dijon mustard", "worcestershire sauce"],
+    "instructions": [
+      "Wash and dry romaine lettuce, then chop",
+      "Make dressing by blending garlic, anchovies, lemon juice, egg yolk, and dijon mustard",
+      "Slowly drizzle in olive oil while blending",
+      "Add worcestershire sauce and season to taste",
+      "Toss lettuce with dressing",
+      "Add croutons and shaved parmesan",
+      "Serve immediately"
+    ],
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 25
+  },
+  {
+    "id": "4",
+    "name": "Grilled Cheese Sandwich",
+    "imageUrl": "https://images.unsplash.com/photo-1528736235302-52922df5c122?w=800",
+    "description": "Perfectly crispy and golden grilled cheese sandwich with melted cheese inside.",
+    "ingredients": ["bread", "cheddar cheese", "butter"],
+    "instructions": [
+      "Butter one side of each bread slice",
+      "Place cheese between bread slices with buttered sides out",
+      "Heat a skillet over medium heat",
+      "Place sandwich in skillet",
+      "Cook until golden brown, about 3-4 minutes",
+      "Flip and cook other side until golden and cheese is melted",
+      "Cut diagonally and serve hot"
+    ],
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 10
+  },
+  {
+    "id": "5",
+    "name": "Spaghetti Carbonara",
+    "imageUrl": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800",
+    "description": "Creamy Italian pasta dish with bacon, eggs, and parmesan cheese.",
+    "ingredients": ["spaghetti", "bacon", "eggs", "parmesan cheese", "black pepper", "salt"],
+    "instructions": [
+      "Cook spaghetti according to package directions",
+      "While pasta cooks, fry bacon until crispy",
+      "Whisk eggs and parmesan together in a bowl",
+      "Drain pasta, reserving 1 cup pasta water",
+      "Add hot pasta to bacon in pan",
+      "Remove from heat and quickly stir in egg mixture",
+      "Add pasta water if needed to create creamy sauce",
+      "Season with black pepper and serve immediately"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 30
+  },
+  {
+    "id": "6",
+    "name": "Chicken Stir Fry",
+    "imageUrl": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=800",
+    "description": "Quick and healthy stir fry with tender chicken and colorful vegetables.",
+    "ingredients": ["chicken breast", "soy sauce", "broccoli", "bell pepper", "onion", "garlic", "ginger", "vegetable oil", "cornstarch", "sesame oil"],
+    "instructions": [
+      "Cut chicken into bite-sized pieces and coat with cornstarch",
+      "Heat oil in a wok or large skillet over high heat",
+      "Stir fry chicken until golden and cooked through, then remove",
+      "Add more oil and stir fry vegetables until tender-crisp",
+      "Add minced garlic and ginger, cook for 30 seconds",
+      "Return chicken to pan",
+      "Add soy sauce and sesame oil",
+      "Toss everything together and serve over rice"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 25
+  },
+  {
+    "id": "7",
+    "name": "Salmon with Roasted Vegetables",
+    "imageUrl": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800",
+    "description": "Healthy and delicious baked salmon with perfectly roasted vegetables.",
+    "ingredients": ["salmon fillet", "asparagus", "cherry tomatoes", "olive oil", "lemon", "garlic", "salt", "pepper", "herbs"],
+    "instructions": [
+      "Preheat oven to 400°F (200°C)",
+      "Place salmon and vegetables on a baking sheet",
+      "Drizzle with olive oil and season with salt, pepper, and herbs",
+      "Add minced garlic and lemon slices",
+      "Bake for 15-20 minutes until salmon is cooked through",
+      "Vegetables should be tender and slightly caramelized",
+      "Squeeze fresh lemon over everything before serving"
+    ],
+    "category": "dinner",
+    "difficulty": "easy",
+    "prepTime": 30
+  },
+  {
+    "id": "8",
+    "name": "Hummus with Vegetables",
+    "imageUrl": "https://images.unsplash.com/photo-1560717845-968905e56178?w=800",
+    "description": "Creamy homemade hummus served with fresh crunchy vegetables.",
+    "ingredients": ["chickpeas", "tahini", "lemon juice", "garlic", "olive oil", "cumin", "salt", "carrots", "celery", "bell pepper"],
+    "instructions": [
+      "Drain and rinse chickpeas",
+      "Add chickpeas, tahini, lemon juice, garlic, and cumin to food processor",
+      "Blend until smooth, adding water if needed",
+      "Drizzle in olive oil while blending",
+      "Season with salt to taste",
+      "Transfer to serving bowl",
+      "Cut vegetables into sticks",
+      "Serve hummus with fresh vegetables"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 15
+  },
+  {
+    "id": "9",
+    "name": "Energy Balls",
+    "imageUrl": "https://images.unsplash.com/photo-1635855588642-e2c34bc3407f?w=800",
+    "description": "No-bake energy balls packed with oats, dates, and nuts. Perfect healthy snack.",
+    "ingredients": ["dates", "oats", "almonds", "peanut butter", "honey", "vanilla extract", "salt", "chocolate chips"],
+    "instructions": [
+      "Add dates to food processor and pulse until broken down",
+      "Add oats, almonds, peanut butter, honey, vanilla, and salt",
+      "Pulse until mixture comes together",
+      "Stir in chocolate chips by hand",
+      "Roll mixture into small balls",
+      "Refrigerate for at least 30 minutes",
+      "Store in refrigerator for up to 2 weeks"
+    ],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "id": "10",
+    "name": "Greek Yogurt Parfait",
+    "imageUrl": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800",
+    "description": "Layered parfait with Greek yogurt, granola, and fresh berries.",
+    "ingredients": ["greek yogurt", "granola", "strawberries", "blueberries", "honey"],
+    "instructions": [
+      "Layer Greek yogurt in a glass or bowl",
+      "Add a layer of granola",
+      "Add fresh berries",
+      "Repeat layers",
+      "Drizzle with honey on top",
+      "Serve immediately for crunchy granola",
+      "Can be prepared ahead without granola and added just before serving"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 5
+  },
+  {
+    "id": "11",
+    "name": "Margherita Pizza",
+    "imageUrl": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800",
+    "description": "Classic Italian pizza with fresh mozzarella, tomatoes, and basil.",
+    "ingredients": ["pizza dough", "tomato sauce", "mozzarella cheese", "fresh basil", "olive oil", "garlic", "salt"],
+    "instructions": [
+      "Preheat oven to 475°F (245°C)",
+      "Roll out pizza dough on a floured surface",
+      "Spread tomato sauce evenly over dough",
+      "Add sliced mozzarella cheese",
+      "Drizzle with olive oil",
+      "Bake for 12-15 minutes until crust is golden",
+      "Add fresh basil leaves",
+      "Slice and serve hot"
+    ],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 35
+  },
+  {
+    "id": "12",
+    "name": "Chicken Tacos",
+    "imageUrl": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800",
+    "description": "Flavorful chicken tacos with fresh toppings and homemade salsa.",
+    "ingredients": ["chicken breast", "taco seasoning", "tortillas", "lettuce", "tomatoes", "cheese", "sour cream", "cilantro", "lime"],
+    "instructions": [
+      "Season chicken with taco seasoning",
+      "Cook chicken in a skillet until done, then slice",
+      "Warm tortillas in a dry pan",
+      "Chop lettuce and tomatoes",
+      "Assemble tacos with chicken and toppings",
+      "Add cheese, sour cream, and cilantro",
+      "Squeeze lime juice over tacos",
+      "Serve immediately"
+    ],
+    "category": "dinner",
+    "difficulty": "easy",
+    "prepTime": 25
+  },
+  {
+    "id": "13",
+    "name": "Smoothie Bowl",
+    "imageUrl": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=800",
+    "description": "Thick and creamy smoothie bowl topped with fresh fruit and granola.",
+    "ingredients": ["banana", "berries", "greek yogurt", "almond milk", "granola", "honey", "chia seeds"],
+    "instructions": [
+      "Blend frozen banana, berries, yogurt, and almond milk until thick",
+      "Pour into a bowl",
+      "Top with fresh berries",
+      "Add granola for crunch",
+      "Sprinkle with chia seeds",
+      "Drizzle with honey",
+      "Serve immediately"
+    ],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 10
+  },
+  {
+    "id": "14",
+    "name": "Beef Burger",
+    "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800",
+    "description": "Juicy homemade beef burger with all the classic toppings.",
+    "ingredients": ["ground beef", "burger buns", "lettuce", "tomato", "onion", "cheese", "pickles", "ketchup", "mustard", "salt", "pepper"],
+    "instructions": [
+      "Form ground beef into patties and season with salt and pepper",
+      "Heat grill or skillet to high heat",
+      "Cook burgers for 4-5 minutes per side",
+      "Add cheese in the last minute if desired",
+      "Toast burger buns",
+      "Assemble burgers with lettuce, tomato, onion, pickles",
+      "Add ketchup and mustard",
+      "Serve hot with fries"
+    ],
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 20
+  },
+  {
+    "id": "15",
+    "name": "Vegetable Soup",
+    "imageUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800",
+    "description": "Hearty and healthy vegetable soup packed with nutrients.",
+    "ingredients": ["carrots", "celery", "onion", "garlic", "tomatoes", "vegetable broth", "green beans", "potato", "herbs", "salt", "pepper"],
+    "instructions": [
+      "Chop all vegetables into bite-sized pieces",
+      "Sauté onion and garlic in a large pot",
+      "Add remaining vegetables and cook for 5 minutes",
+      "Pour in vegetable broth",
+      "Add herbs, salt, and pepper",
+      "Bring to a boil then simmer for 30 minutes",
+      "Adjust seasoning to taste",
+      "Serve hot with crusty bread"
+    ],
+    "category": "lunch",
+    "difficulty": "easy",
+    "prepTime": 45
+  }
+]
