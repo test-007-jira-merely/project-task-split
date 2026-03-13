@@ -6,3 +6,8 @@ export { LoadingSkeleton, MealCardSkeleton } from './LoadingSkeleton';
 export { EmptyState } from './EmptyState';
 export { Badge } from './Badge';
 export { Spinner } from './Spinner';
+export { ErrorBoundary } from './ErrorBoundary';
+export { PageLoader } from './PageLoader';
+export { ToastContainer, useToastStore } from './Toast';
+export { LazyImage } from './LazyImage';
+export { OfflineBanner } from './OfflineBanner';

@@ -3,7 +3,7 @@ import { Heart, Clock, ChefHat } from 'lucide-react';
 import type { Meal } from '../../types';
 import { useAppStore } from '../../stores/useAppStore';
 import { useAddFavorite, useRemoveFavorite } from '../../hooks';
-import { Badge } from '../ui';
+import { Badge, LazyImage } from '../ui';
 
 interface MealCardProps {
   meal: Meal;
@@ -39,7 +39,7 @@ export function MealCard({ meal, matchPercentage, onClick }: MealCardProps) {
       onClick={onClick}
     >
       <div className="relative h-48 overflow-hidden">
-        <img
+        <LazyImage
           src={meal.imageUrl}
           alt={meal.name}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
