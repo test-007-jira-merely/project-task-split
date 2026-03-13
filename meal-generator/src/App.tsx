@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import { useAppStore } from './stores/useAppStore';
+import { AppProviders } from './app/providers';
+import { AppRouter } from './app/router';
 
 function App() {
   const { theme } = useAppStore();
@@ -13,17 +15,21 @@ function App() {
     }
   }, [theme]);
 
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (e: MediaQueryListEvent) => {
+      const { setTheme } = useAppStore.getState();
+      setTheme(e.matches ? 'dark' : 'light');
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
+
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          MealGen
-        </h1>
-        <p className="text-gray-600 dark:text-gray-400">
-          Foundation setup complete. UI components coming next.
-        </p>
-      </div>
-    </div>
+    <AppProviders>
+      <AppRouter />
+    </AppProviders>
   );
 }
 
