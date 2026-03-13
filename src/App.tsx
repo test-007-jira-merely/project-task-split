@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
+import { RouterProvider } from 'react-router-dom';
 import { useAuthStore } from './stores/useAuthStore';
 import { useThemeStore } from './stores/useThemeStore';
+import { router } from './app/router';
+import { Providers } from './app/providers';
 
 function App() {
   const initialize = useAuthStore((state) => state.initialize);
@@ -19,14 +22,9 @@ function App() {
   }, [theme]);
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="container mx-auto p-4">
-        <h1 className="text-4xl font-bold text-center">MealGen</h1>
-        <p className="text-center text-muted-foreground mt-2">
-          Foundation setup complete. UI components will be added in the next subtask.
-        </p>
-      </div>
-    </div>
+    <Providers>
+      <RouterProvider router={router} />
+    </Providers>
   );
 }
 
