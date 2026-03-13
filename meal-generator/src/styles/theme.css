@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary-50: #fef3f2;
+    --color-primary-100: #fee4e2;
+    --color-primary-200: #fecdca;
+    --color-primary-300: #fda29b;
+    --color-primary-400: #f97066;
+    --color-primary-500: #f04438;
+    --color-primary-600: #d92d20;
+    --color-primary-700: #b42318;
+    --color-primary-800: #912018;
+    --color-primary-900: #7a271a;
+
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+  }
+
+  .dark {
+    --color-primary-50: #7a271a;
+    --color-primary-100: #912018;
+    --color-primary-200: #b42318;
+    --color-primary-300: #d92d20;
+    --color-primary-400: #f04438;
+    --color-primary-500: #f97066;
+    --color-primary-600: #fda29b;
+    --color-primary-700: #fecdca;
+    --color-primary-800: #fee4e2;
+    --color-primary-900: #fef3f2;
+
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/80 dark:bg-gray-900/80 backdrop-blur-md;
+  }
+
+  .glass-card {
+    @apply glass border border-gray-200/50 dark:border-gray-700/50 shadow-xl rounded-2xl;
+  }
+}
