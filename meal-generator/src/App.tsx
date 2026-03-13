@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useAppStore } from './stores/useAppStore';
 import { AppProviders } from './app/providers';
 import { AppRouter } from './app/router';
+import { ErrorBoundary } from './components/ErrorBoundary';
 
 function App() {
   const { theme } = useAppStore();
@@ -27,9 +28,11 @@ function App() {
   }, []);
 
   return (
-    <AppProviders>
-      <AppRouter />
-    </AppProviders>
+    <ErrorBoundary>
+      <AppProviders>
+        <AppRouter />
+      </AppProviders>
+    </ErrorBoundary>
   );
 }
 

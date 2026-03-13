@@ -7,8 +7,7 @@ import { Home } from '@/pages/home/Home';
 import { Ingredients } from '@/pages/ingredients/Ingredients';
 import { Favorites } from '@/pages/favorites/Favorites';
 import { History } from '@/pages/history/History';
-
-const AdminPage = () => <div>Admin Page (Placeholder for next subtask)</div>;
+import { Admin } from '@/pages/admin/Admin';
 
 export const AppRouter = () => {
   return (
@@ -34,7 +33,7 @@ export const AppRouter = () => {
 
         <Route path="/admin" element={
           <ProtectedRoute requireAdmin>
-            <AppLayout><AdminPage /></AppLayout>
+            <AppLayout><Admin /></AppLayout>
           </ProtectedRoute>
         } />
       </Routes>
