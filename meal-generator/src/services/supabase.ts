@@ -1,0 +1,111 @@
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
+export type Database = {
+  public: {
+    Tables: {
+      users: {
+        Row: {
+          id: string;
+          email: string;
+          is_admin: boolean;
+          created_at: string;
+        };
+        Insert: {
+          id: string;
+          email: string;
+          is_admin?: boolean;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          email?: string;
+          is_admin?: boolean;
+          created_at?: string;
+        };
+      };
+      meals: {
+        Row: {
+          id: string;
+          name: string;
+          description: string;
+          image_url: string;
+          ingredients: string[];
+          instructions: string[];
+          category: string;
+          prep_time: number | null;
+          difficulty: string | null;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          name: string;
+          description: string;
+          image_url: string;
+          ingredients: string[];
+          instructions: string[];
+          category: string;
+          prep_time?: number | null;
+          difficulty?: string | null;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          name?: string;
+          description?: string;
+          image_url?: string;
+          ingredients?: string[];
+          instructions?: string[];
+          category?: string;
+          prep_time?: number | null;
+          difficulty?: string | null;
+          created_at?: string;
+        };
+      };
+      favorites: {
+        Row: {
+          id: string;
+          user_id: string;
+          meal_id: string;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          user_id: string;
+          meal_id: string;
+          created_at?: string;
+        };
+        Update: {
+          id?: string;
+          user_id?: string;
+          meal_id?: string;
+          created_at?: string;
+        };
+      };
+      user_history: {
+        Row: {
+          id: string;
+          user_id: string;
+          meal_id: string;
+          generated_at: string;
+        };
+        Insert: {
+          id?: string;
+          user_id: string;
+          meal_id: string;
+          generated_at?: string;
+        };
+        Update: {
+          id?: string;
+          user_id?: string;
+          meal_id?: string;
+          generated_at?: string;
+        };
+      };
+    };
+  };
+};
