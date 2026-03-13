@@ -1,0 +1,95 @@
+[
+  {
+    "name": "Classic Margherita Pizza",
+    "description": "A traditional Italian pizza with fresh mozzarella, tomatoes, and basil. Simple yet incredibly flavorful.",
+    "imageUrl": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800&auto=format&fit=crop",
+    "ingredients": ["pizza dough", "tomato sauce", "fresh mozzarella", "fresh basil", "olive oil", "salt"],
+    "instructions": [
+      "Preheat oven to 475°F (245°C)",
+      "Roll out pizza dough on a floured surface",
+      "Spread tomato sauce evenly over dough",
+      "Add torn mozzarella pieces",
+      "Drizzle with olive oil and add salt",
+      "Bake for 12-15 minutes until crust is golden",
+      "Top with fresh basil leaves before serving"
+    ],
+    "category": "lunch",
+    "preparationTime": 30,
+    "difficulty": "medium"
+  },
+  {
+    "name": "Avocado Toast with Poached Egg",
+    "description": "A healthy and delicious breakfast featuring creamy avocado, perfectly poached egg, and whole grain bread.",
+    "imageUrl": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=800&auto=format&fit=crop",
+    "ingredients": ["whole grain bread", "avocado", "eggs", "lemon juice", "red pepper flakes", "salt", "black pepper"],
+    "instructions": [
+      "Toast the bread until golden brown",
+      "Mash avocado with lemon juice, salt, and pepper",
+      "Bring water to a gentle simmer in a pot",
+      "Crack egg into a small bowl",
+      "Create a gentle whirlpool in the water and add egg",
+      "Poach for 3-4 minutes",
+      "Spread avocado on toast and top with poached egg",
+      "Sprinkle with red pepper flakes"
+    ],
+    "category": "breakfast",
+    "preparationTime": 15,
+    "difficulty": "easy"
+  },
+  {
+    "name": "Grilled Salmon with Vegetables",
+    "description": "Perfectly grilled salmon fillet served with roasted seasonal vegetables and lemon butter sauce.",
+    "imageUrl": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&auto=format&fit=crop",
+    "ingredients": ["salmon fillet", "broccoli", "carrots", "olive oil", "lemon", "butter", "garlic", "salt", "black pepper"],
+    "instructions": [
+      "Preheat grill to medium-high heat",
+      "Season salmon with salt, pepper, and olive oil",
+      "Cut vegetables into bite-sized pieces",
+      "Toss vegetables with olive oil, salt, and pepper",
+      "Grill salmon for 4-5 minutes per side",
+      "Roast vegetables at 425°F for 20 minutes",
+      "Melt butter with minced garlic and lemon juice",
+      "Serve salmon with vegetables and drizzle with lemon butter"
+    ],
+    "category": "dinner",
+    "preparationTime": 35,
+    "difficulty": "medium"
+  },
+  {
+    "name": "Greek Yogurt Parfait",
+    "description": "Layers of creamy Greek yogurt, fresh berries, honey, and crunchy granola make a perfect healthy snack.",
+    "imageUrl": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800&auto=format&fit=crop",
+    "ingredients": ["greek yogurt", "strawberries", "blueberries", "granola", "honey", "almonds"],
+    "instructions": [
+      "Layer Greek yogurt in a glass or bowl",
+      "Add a layer of mixed berries",
+      "Sprinkle granola on top",
+      "Add another layer of yogurt",
+      "Top with more berries and granola",
+      "Drizzle with honey",
+      "Garnish with sliced almonds"
+    ],
+    "category": "snack",
+    "preparationTime": 5,
+    "difficulty": "easy"
+  },
+  {
+    "name": "Chicken Stir Fry",
+    "description": "Quick and colorful stir fry with tender chicken, crisp vegetables, and savory Asian-inspired sauce.",
+    "imageUrl": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=800&auto=format&fit=crop",
+    "ingredients": ["chicken breast", "bell peppers", "onion", "broccoli", "soy sauce", "ginger", "garlic", "sesame oil", "rice"],
+    "instructions": [
+      "Cook rice according to package instructions",
+      "Cut chicken into bite-sized pieces",
+      "Heat sesame oil in a wok or large pan",
+      "Stir fry chicken until cooked through, remove and set aside",
+      "Add vegetables and stir fry for 3-4 minutes",
+      "Mix soy sauce, ginger, and garlic",
+      "Return chicken to pan and add sauce",
+      "Toss everything together and serve over rice"
+    ],
+    "category": "dinner",
+    "preparationTime": 25,
+    "difficulty": "easy"
+  }
+]
