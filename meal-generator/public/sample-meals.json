@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Classic Pancakes",
+    "description": "Fluffy homemade pancakes perfect for a weekend breakfast",
+    "imageUrl": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800",
+    "ingredients": ["2 cups all-purpose flour", "2 eggs", "1.5 cups milk", "2 tbsp sugar", "2 tsp baking powder", "1 tsp vanilla extract", "Pinch of salt", "Butter for cooking"],
+    "instructions": ["Mix flour, sugar, baking powder, and salt in a large bowl", "In another bowl, whisk together milk, eggs, and vanilla", "Pour wet ingredients into dry ingredients and mix until just combined", "Heat a pan over medium heat and add butter", "Pour 1/4 cup batter for each pancake", "Cook until bubbles form on surface, then flip", "Cook until golden brown on both sides"],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 20
+  },
+  {
+    "name": "Caesar Salad",
+    "description": "Classic Caesar salad with crispy romaine and homemade dressing",
+    "imageUrl": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=800",
+    "ingredients": ["2 heads romaine lettuce", "1 cup croutons", "1/2 cup parmesan cheese", "2 cloves garlic", "2 anchovy fillets", "1 egg yolk", "2 tbsp lemon juice", "1 tsp Dijon mustard", "1/2 cup olive oil", "Salt and pepper"],
+    "instructions": ["Wash and chop romaine lettuce", "In a bowl, mash garlic and anchovies into a paste", "Add egg yolk, lemon juice, and mustard", "Slowly whisk in olive oil until emulsified", "Season with salt and pepper", "Toss lettuce with dressing", "Top with croutons and parmesan"],
+    "category": "lunch",
+    "difficulty": "medium",
+    "prepTime": 15
+  },
+  {
+    "name": "Spaghetti Carbonara",
+    "description": "Authentic Italian pasta with eggs, cheese, and pancetta",
+    "imageUrl": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800",
+    "ingredients": ["400g spaghetti", "200g pancetta", "4 egg yolks", "1 cup parmesan cheese", "Black pepper", "Salt"],
+    "instructions": ["Cook spaghetti according to package directions", "Dice and cook pancetta until crispy", "Mix egg yolks with grated parmesan", "Reserve pasta water, then drain pasta", "Add hot pasta to pancetta", "Remove from heat, add egg mixture", "Toss quickly, adding pasta water to create sauce", "Season with black pepper"],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 25
+  },
+  {
+    "name": "Chocolate Chip Cookies",
+    "description": "Chewy homemade chocolate chip cookies",
+    "imageUrl": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=800",
+    "ingredients": ["2 cups flour", "1 cup butter", "3/4 cup brown sugar", "1/4 cup white sugar", "2 eggs", "2 tsp vanilla", "1 tsp baking soda", "1 tsp salt", "2 cups chocolate chips"],
+    "instructions": ["Preheat oven to 375°F", "Cream butter and sugars", "Beat in eggs and vanilla", "Mix flour, baking soda, and salt", "Combine wet and dry ingredients", "Fold in chocolate chips", "Drop spoonfuls on baking sheet", "Bake 9-11 minutes until golden"],
+    "category": "snack",
+    "difficulty": "easy",
+    "prepTime": 30
+  },
+  {
+    "name": "Avocado Toast",
+    "description": "Simple and healthy avocado toast with extras",
+    "imageUrl": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=800",
+    "ingredients": ["2 slices bread", "1 ripe avocado", "1 tbsp lemon juice", "Salt", "Pepper", "Red pepper flakes", "Olive oil"],
+    "instructions": ["Toast bread until golden", "Mash avocado with lemon juice", "Season with salt and pepper", "Spread avocado on toast", "Drizzle with olive oil", "Sprinkle red pepper flakes"],
+    "category": "breakfast",
+    "difficulty": "easy",
+    "prepTime": 5
+  },
+  {
+    "name": "Chicken Stir Fry",
+    "description": "Quick and healthy chicken and vegetable stir fry",
+    "imageUrl": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=800",
+    "ingredients": ["500g chicken breast", "2 cups mixed vegetables", "3 cloves garlic", "2 tbsp soy sauce", "1 tbsp oyster sauce", "1 tsp sesame oil", "2 tbsp vegetable oil", "1 tsp cornstarch", "Rice for serving"],
+    "instructions": ["Cut chicken into bite-sized pieces", "Mix soy sauce, oyster sauce, and cornstarch", "Heat oil in wok over high heat", "Stir fry chicken until cooked", "Remove chicken, add vegetables", "Stir fry vegetables until tender-crisp", "Return chicken to wok", "Add sauce and toss", "Serve over rice"],
+    "category": "dinner",
+    "difficulty": "medium",
+    "prepTime": 20
+  }
+]
