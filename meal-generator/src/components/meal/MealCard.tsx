@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { motion } from 'framer-motion';
 import { Clock, ChefHat, Heart } from 'lucide-react';
 import type { Meal } from '../../types';
@@ -12,7 +13,7 @@ interface MealCardProps {
   onViewDetails?: () => void;
 }
 
-export const MealCard = ({ meal, matchPercentage, onViewDetails }: MealCardProps) => {
+export const MealCard = memo(({ meal, matchPercentage, onViewDetails }: MealCardProps) => {
   const user = useAppStore((state) => state.user);
   const queryClient = useQueryClient();
 
@@ -115,4 +116,4 @@ export const MealCard = ({ meal, matchPercentage, onViewDetails }: MealCardProps
       </div>
     </motion.div>
   );
-};
+});

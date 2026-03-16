@@ -1,73 +1,150 @@
-# React + TypeScript + Vite
+# MealGen - AI-Style Meal Discovery Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, production-grade web application for discovering and managing meals with intelligent ingredient-based filtering.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎲 Random meal generation
+- 🔍 Intelligent ingredient-based meal finder
+- ❤️ User favorites system
+- 📜 Meal history tracking
+- 🔐 User authentication with Supabase
+- 🎨 Dark/Light theme support
+- 📱 Fully responsive design
+- ⚡ Production-ready performance optimizations
+- ♿ Full accessibility compliance
+- 🛡️ Admin panel for meal management
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 18** + **Vite** - Fast, modern build tooling
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first styling
+- **Framer Motion** - Smooth animations
+- **Zustand** - Global state management
+- **TanStack Query** - Server state management
+- **React Hook Form + Zod** - Form validation
+- **Supabase** - Authentication and database
+- **React Router** - Client-side routing
 
-## Expanding the ESLint configuration
+## Setup Instructions
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 1. Clone and Install
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone <repository-url>
+cd meal-generator
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Configure Supabase
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Create a Supabase project at https://supabase.com
+2. Create the following tables in your Supabase database:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+**meals table:**
+```sql
+create table meals (
+  id uuid primary key default uuid_generate_v4(),
+  name text not null,
+  imageUrl text not null,
+  description text not null,
+  ingredients text[] not null,
+  instructions text[] not null,
+  category text not null check (category in ('breakfast', 'lunch', 'dinner', 'snack')),
+  difficulty text check (difficulty in ('easy', 'medium', 'hard')),
+  prepTime integer,
+  created_at timestamp with time zone default now()
+);
 ```
+
+**favorites table:**
+```sql
+create table favorites (
+  id uuid primary key default uuid_generate_v4(),
+  user_id uuid references auth.users not null,
+  meal_id uuid references meals not null,
+  created_at timestamp with time zone default now(),
+  unique(user_id, meal_id)
+);
+```
+
+**user_history table:**
+```sql
+create table user_history (
+  id uuid primary key default uuid_generate_v4(),
+  user_id uuid references auth.users not null,
+  meal_id uuid references meals not null,
+  generated_at timestamp with time zone default now()
+);
+```
+
+3. Enable Row Level Security (RLS) policies as needed
+
+### 3. Environment Variables
+
+Copy `.env.example` to `.env.local` and fill in your Supabase credentials:
+
+```bash
+cp .env.example .env.local
+```
+
+Edit `.env.local` with your values.
+
+### 4. Run Development Server
+
+```bash
+npm run dev
+```
+
+Open http://localhost:5173
+
+### 5. Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+## Usage
+
+### For Users
+- **Home**: Generate random meals
+- **Ingredients**: Find meals by available ingredients
+- **Favorites**: Save and view favorite meals (requires login)
+- **History**: View recently generated meals (requires login)
+
+### For Admins
+- Access `/admin` route (must be configured in VITE_ADMIN_EMAILS)
+- Create, edit, and delete meals
+- Import meal datasets via JSON
+- View meal statistics
+
+## Project Structure
+
+```
+meal-generator/
+├── src/
+│   ├── app/                 # App configuration
+│   │   ├── providers.tsx    # Global providers
+│   │   └── router.tsx       # Route definitions
+│   ├── components/          # Reusable components
+│   │   ├── admin/           # Admin-specific components
+│   │   ├── ingredients/     # Ingredient filter components
+│   │   ├── layout/          # Layout components
+│   │   ├── meal/            # Meal display components
+│   │   └── ui/              # Base UI components
+│   ├── features/            # Feature-specific code
+│   ├── hooks/               # Custom React hooks
+│   ├── pages/               # Page components
+│   ├── services/            # API services
+│   ├── stores/              # Zustand stores
+│   ├── types/               # TypeScript types
+│   └── utils/               # Utility functions
+├── public/                  # Static assets
+└── index.html              # Entry HTML
+```
+
+## License
+
+MIT

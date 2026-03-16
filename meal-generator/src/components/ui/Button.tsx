@@ -28,9 +28,11 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <motion.button
         ref={ref}
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
+        whileHover={{ scale: props.disabled ? 1 : 1.02 }}
+        whileTap={{ scale: props.disabled ? 1 : 0.98 }}
         className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
+        aria-disabled={props.disabled}
+        role="button"
         {...props}
       >
         {children}
